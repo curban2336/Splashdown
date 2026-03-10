@@ -658,11 +658,13 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   correctColor: {r: 0.00965035, g: 1, b: 0, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  pMovement: {fileID: 0}
   trickTime: 1
   setTrick: 0
   trickCount: 1
   trickIndex: 0
   trickTimeLimit: 100
+  trickTimeLimitStart: 0
 --- !u!4 &483866946
 Transform:
   m_ObjectHideFlags: 0
@@ -1075,7 +1077,7 @@ Transform:
   m_GameObject: {fileID: 640530873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 2.02, z: -10}
+  m_LocalPosition: {x: -0, y: 2.02, z: -14.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1983,6 +1985,8 @@ GameObject:
   - component: {fileID: 1595811046}
   - component: {fileID: 1595811045}
   - component: {fileID: 1595811044}
+  - component: {fileID: 1595811047}
+  - component: {fileID: 1595811048}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -2002,6 +2006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0fb2ad224dd4eb49b764eddbf9c002c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  trickHandler: {fileID: 0}
   bouyancy: 6
   downSpeed: -11
   isInWater: 1
@@ -2072,12 +2077,57 @@ Transform:
   m_GameObject: {fileID: 1595811043}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.18, y: 2.04, z: 0}
+  m_LocalPosition: {x: -3.18, y: 0.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595811047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595811043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 791bc540eea57d447bdadb694c7837b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeColorBelowPoint
+  canJumpTrigger: 0
+  thresholdY: -0.5
+  jumpForce: 10
+  below: 0
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  belowColor: {r: 0.504717, g: 0.8381555, b: 1, a: 1}
+--- !u!50 &1595811048
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595811043}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1655762631
 GameObject:
   m_ObjectHideFlags: 0
