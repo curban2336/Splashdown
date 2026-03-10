@@ -659,7 +659,7 @@ MonoBehaviour:
   correctColor: {r: 0.00965035, g: 1, b: 0, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
   pMovement: {fileID: 1595811044}
-  trickTime: 1
+  trickTime: 0
   setTrick: 0
   trickCount: 1
   trickIndex: 0
@@ -673,8 +673,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483866944}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.44, z: 14.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -682,7 +682,7 @@ Transform:
   - {fileID: 1787354654}
   - {fileID: 67751946}
   - {fileID: 1046966594}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 640530877}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &494771167
 GameObject:
@@ -1080,7 +1080,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 2.02, z: -14.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 483866946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &640530878
@@ -2821,5 +2822,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 640530877}
   - {fileID: 1595811046}
-  - {fileID: 483866946}
   - {fileID: 1561175178}

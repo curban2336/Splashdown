@@ -17,7 +17,7 @@ public class TrickHandler : MonoBehaviour
     [SerializeField] Color wrongColor;
     [SerializeField] WaterMovement pMovement;
 
-    [SerializeField] bool trickTime = true;
+    [SerializeField] bool trickTime = false;
     [SerializeField] bool setTrick = false;
     public int trickCount = 1;
     public int trickIndex = 0;
@@ -37,11 +37,11 @@ public class TrickHandler : MonoBehaviour
         StartCoroutine("Wait");
     }
 
-    public void ActivateTrickTime(float inputTime)
+    public void ActivateTrickTime()
     {
         trickTime = true;
-        trickTimeLimit = inputTime;
-        trickTimeLimitStart = inputTime;
+        trickTimeLimit = 360f;
+        trickTimeLimitStart = 360f;
     }
 
     IEnumerator Wait()
@@ -56,12 +56,12 @@ public class TrickHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.U))
+        if (ColorSwitcherWater.isJumping && !BG_MoveLeft.jumpStart)
         {
-            ActivateTrickTime(20f);
+            ActivateTrickTime();
         }
 
-        if(trickTime)
+        if (trickTime)
         {
             if(!setTrick)
             {
@@ -78,7 +78,6 @@ public class TrickHandler : MonoBehaviour
             if (trickTimeLimit <= 0)
             {
                 trickTime = false;
-                //setTrick = false;
                 trickTimeLimit = trickTimeLimitStart;
                 trickSeq.Clear();
                 trickIndex = 0;
@@ -141,6 +140,20 @@ public class TrickHandler : MonoBehaviour
                 setTrick = false;
                 pMovement.isInWater = true;
             }
+        }
+
+        if (!ColorSwitcherWater.isJumping)
+        {
+            trickTime = false;
+            trickTimeLimit = trickTimeLimitStart;
+            foreach (GameObject obj in trickSeq)
+            {
+                obj.GetComponent<SpriteRenderer>().enabled = false;
+            }
+            trickSeq.Clear();
+            trickIndex = 0;
+            setTrick = false;
+            pMovement.isInWater = true;
         }
     }
 }

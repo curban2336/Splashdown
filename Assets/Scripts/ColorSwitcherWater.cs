@@ -40,14 +40,18 @@ public class ColorSwitcherWater : MonoBehaviour
             isJumping = false;
             canJumpTrigger = false;
         }
-        if (transform.position.y >= thresholdY)
+
+        if (Input.GetKeyDown(KeyCode.Space) && canJumpTrigger)
+        {
+            BG_MoveLeft.jumpStart = false;
+            Jump();
+        }
+        
+        if (!below && !isJumping && !canJumpTrigger)
         {
             isJumping = true;
             canJumpTrigger = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && canJumpTrigger)
-        {
-            Jump();
+            BG_MoveLeft.jumpStart = true;
         }
     }
 

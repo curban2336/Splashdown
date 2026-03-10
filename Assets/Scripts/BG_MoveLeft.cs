@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class BG_MoveLeft : MonoBehaviour
 {
     public float speed = 10;
+    public static bool jumpStart = false;
     Vector3 startPos;
     float repeatWidth;
 
@@ -23,12 +24,19 @@ public class BG_MoveLeft : MonoBehaviour
         {
             transform.position = startPos;
         }
-
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+        if(!ColorSwitcherWater.isJumping && !jumpStart)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
+        }
     
-        if (ColorSwitcherWater.thresholdY >= -0.48)
+        if(ColorSwitcherWater.isJumping && jumpStart)
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed / 2);
+        }
+
+        if (ColorSwitcherWater.isJumping && !jumpStart)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
     }
 }
