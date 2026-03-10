@@ -7,10 +7,12 @@ public class BG_MoveLeft : MonoBehaviour
 {
     public float speed = 10;
     Vector3 startPos;
+    float repeatWidth;
 
     void Start()
     {
         startPos = transform.position;
+        repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
     }
 
     // Update is called once per frame
