@@ -19,9 +19,13 @@ public class WaterMovement : MonoBehaviour
     void Update()
     {
         CameraFrameUpdate();
-        if(ColorSwitcherWater.isJumping)
+        if (ColorSwitcherWater.isJumping)
         {
             isInWater = false;
+        }
+        else
+        {
+            isInWater = true;
         }
         if (isInWater)
         {
