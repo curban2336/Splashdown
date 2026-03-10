@@ -18,12 +18,17 @@ public class BG_MoveLeft : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate (Vector3.left * Time.deltaTime * speed);
-
+        
         if (transform.position.x < startPos.x - 16)
         {
             transform.position = startPos;
         }
-            
+
+        transform.Translate(Vector3.left * Time.deltaTime * speed);
+    
+        if (ColorSwitcherWater.thresholdY >= -0.48)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed / 2);
+        }
     }
 }

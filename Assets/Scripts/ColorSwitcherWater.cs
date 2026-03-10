@@ -5,7 +5,7 @@ public class ColorSwitcherWater : MonoBehaviour
     public bool canJumpTrigger = false;
     public static bool isJumping = false;
 
-    public float thresholdY = -0.5f;
+    public static float thresholdY = -0.5f;
     public float jumpForce = 10f;
     public bool below;
 
@@ -42,6 +42,7 @@ public class ColorSwitcherWater : MonoBehaviour
         }
         if (transform.position.y >= thresholdY)
         {
+            isJumping = true;
             canJumpTrigger = true;
         }
         if (Input.GetKeyDown(KeyCode.Space) && canJumpTrigger)
@@ -54,6 +55,5 @@ public class ColorSwitcherWater : MonoBehaviour
     {
         rb.simulated = true;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        isJumping = true;
     }
 }
