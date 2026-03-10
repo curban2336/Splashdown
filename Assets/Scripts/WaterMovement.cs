@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WaterMovement : MonoBehaviour
 {
-
+    [SerializeField] TrickHandler trickHandler;
     [SerializeField] float bouyancy = 1f;
     [SerializeField] float downSpeed = -2f;
     private Rect cameraRect;
