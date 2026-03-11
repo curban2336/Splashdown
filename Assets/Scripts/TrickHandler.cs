@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -19,7 +20,7 @@ public class TrickHandler : MonoBehaviour
 
     [SerializeField] bool trickTime = false;
     [SerializeField] bool setTrick = false;
-    public int trickCount = 1;
+    public int trickCount = 3;
     public int trickIndex = 0;
     public float trickTimeLimit;
     public float trickTimeLimitStart;
@@ -37,8 +38,9 @@ public class TrickHandler : MonoBehaviour
         StartCoroutine("Wait");
     }
 
-    public void ActivateTrickTime()
+    public void ActivateTrickTime(int trickNum)
     {
+        trickCount = trickNum;
         trickTime = true;
         trickTimeLimit = 360f;
         trickTimeLimitStart = 360f;
@@ -56,10 +58,6 @@ public class TrickHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ColorSwitcherWater.isJumping && !BG_MoveLeft.jumpStart)
-        {
-            ActivateTrickTime();
-        }
 
         if (trickTime)
         {
@@ -74,13 +72,21 @@ public class TrickHandler : MonoBehaviour
                 pMovement.isInWater = false;
                 setTrick = true;
             }
-            trickTimeLimit -= Time.deltaTime;
-            if (trickTimeLimit <= 0)
+            //trickTimeLimit -= Time.deltaTime;
+            if (trickCount == 0)
             {
+                Debug.Log("Does reset");
+                ResetTrick();
                 trickTime = false;
                 trickTimeLimit = trickTimeLimitStart;
+                foreach (GameObject obj in trickSeq)
+                {
+                    obj.GetComponent<SpriteRenderer>().enabled = false;
+                }
                 trickSeq.Clear();
                 trickIndex = 0;
+                setTrick = false;
+                pMovement.isInWater = true;
             }
             else
             {
@@ -125,21 +131,20 @@ public class TrickHandler : MonoBehaviour
                     ResetTrick();
                 }
             }
+        }
 
-            if(trickIndex == trickSeq.Count)
+        if (trickTime && trickIndex >= trickSeq.Count)
+        {
+            trickIndex = 0;
+            trickTimeLimit = trickTimeLimitStart;
+            for (int i = 0; i < trickSeq.Count; i++)
             {
-                ResetTrick();
-                trickTime = false;
-                trickTimeLimit = trickTimeLimitStart;
-                foreach(GameObject obj in trickSeq)
-                {
-                    obj.GetComponent<SpriteRenderer>().enabled = false;
-                }
-                trickSeq.Clear();
-                trickIndex = 0;
-                setTrick = false;
-                pMovement.isInWater = true;
+                trickSeq[i].GetComponent<SpriteRenderer>().color = defaultColor;
+                trickSeq[i].GetComponent<SpriteRenderer>().enabled = false;
             }
+            --trickCount;
+            setTrick = false;
+            trickSeq.Clear();
         }
 
         if (!ColorSwitcherWater.isJumping)
@@ -149,6 +154,7 @@ public class TrickHandler : MonoBehaviour
             foreach (GameObject obj in trickSeq)
             {
                 obj.GetComponent<SpriteRenderer>().enabled = false;
+                obj.GetComponent<SpriteRenderer>().color = defaultColor;
             }
             trickSeq.Clear();
             trickIndex = 0;
