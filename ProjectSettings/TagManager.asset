@@ -8,6 +8,8 @@ TagManager:
   - down
   - left
   - right
+  - Fast
+  - Slow
   layers:
   - Default
   - TransparentFX
