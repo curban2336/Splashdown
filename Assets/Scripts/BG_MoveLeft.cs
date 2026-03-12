@@ -39,4 +39,14 @@ public class BG_MoveLeft : MonoBehaviour
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
     }
+
+    public void SpeedUp()
+    {
+        speed += 1;
+    }
+
+    public void SpeedDown()
+    {
+        speed -= 1;
+    }
 }
