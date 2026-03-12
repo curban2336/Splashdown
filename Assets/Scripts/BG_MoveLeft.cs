@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BG_MoveLeft : MonoBehaviour
 {
-    public float speed = 10;
+    public static float speed = 10;
     public float deathSpeedThreshold = 2f; 
     public static bool jumpStart = false;
 
