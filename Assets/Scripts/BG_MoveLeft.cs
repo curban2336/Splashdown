@@ -54,8 +54,9 @@ public class BG_MoveLeft : MonoBehaviour
         {
             StartCoroutine(HandleDeath());
         }
+        
     }
-
+    
     public void SpeedUp()
     {
         speed += 1;
@@ -64,6 +65,16 @@ public class BG_MoveLeft : MonoBehaviour
     public void SpeedDown()
     {
         speed -= 1;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("LevelTest Scene");
+    }
+
+    public void QuitMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     IEnumerator HandleDeath()
