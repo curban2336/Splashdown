@@ -25,6 +25,8 @@ public class TrickHandler : MonoBehaviour
     public float trickTimeLimit;
     public float trickTimeLimitStart;
 
+    [SerializeField] public static int wrongCount = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +38,20 @@ public class TrickHandler : MonoBehaviour
         trickIndex = 0;
         trickTimeLimit = trickTimeLimitStart;
         StartCoroutine("Wait");
+    }
+
+    void NextTrick()
+    {
+        trickIndex = 8;
+        trickTimeLimit = trickTimeLimitStart;
+        for (int i = 0; i < trickSeq.Count; i++)
+        {
+            trickSeq[i].GetComponent<SpriteRenderer>().color = defaultColor;
+            trickSeq[i].GetComponent<SpriteRenderer>().enabled = false;
+        }
+        setTrick = false;
+        trickSeq.Clear();
+        wrongCount++;
     }
 
     public void ActivateTrickTime(int trickNum)
@@ -75,7 +91,6 @@ public class TrickHandler : MonoBehaviour
             //trickTimeLimit -= Time.deltaTime;
             if (trickCount == 0)
             {
-                Debug.Log("Does reset");
                 ResetTrick();
                 trickTime = false;
                 trickTimeLimit = trickTimeLimitStart;
@@ -98,7 +113,7 @@ public class TrickHandler : MonoBehaviour
                 else if(Input.GetKeyUp(KeyCode.W) && !trickSeq[trickIndex].CompareTag("up"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
-                    ResetTrick();
+                    NextTrick();
                 }
                 if (Input.GetKeyUp(KeyCode.S) && trickSeq[trickIndex].CompareTag("down"))
                 {
@@ -108,7 +123,7 @@ public class TrickHandler : MonoBehaviour
                 else if (Input.GetKeyUp(KeyCode.S) && !trickSeq[trickIndex].CompareTag("down"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
-                    ResetTrick();
+                    NextTrick();
                 }
                 if (Input.GetKeyUp(KeyCode.D) && trickSeq[trickIndex].CompareTag("right"))
                 {
@@ -118,7 +133,7 @@ public class TrickHandler : MonoBehaviour
                 else if (Input.GetKeyUp(KeyCode.D) && !trickSeq[trickIndex].CompareTag("right"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
-                    ResetTrick();
+                    NextTrick();
                 }
                 if (Input.GetKeyUp(KeyCode.A) && trickSeq[trickIndex].CompareTag("left"))
                 {
@@ -128,7 +143,7 @@ public class TrickHandler : MonoBehaviour
                 else if (Input.GetKeyUp(KeyCode.A) && !trickSeq[trickIndex].CompareTag("left"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
-                    ResetTrick();
+                    NextTrick();
                 }
             }
         }
@@ -160,6 +175,7 @@ public class TrickHandler : MonoBehaviour
             trickIndex = 0;
             setTrick = false;
             pMovement.isInWater = true;
+            wrongCount = 0;
         }
     }
 }
