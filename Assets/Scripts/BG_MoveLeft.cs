@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class BG_MoveLeft : MonoBehaviour
 {
-    public static float speed = 10;
+    public float speed = 10;
     public float deathSpeedThreshold = 2f; 
     public static bool jumpStart = false;
 
@@ -15,6 +15,14 @@ public class BG_MoveLeft : MonoBehaviour
     float repeatWidth;
     bool isDead = false;
 
+    void Awake()
+    {
+        // Reset static state so previous run won't interfere after a reload
+        jumpStart = false;
+        ColorSwitcherWater.isJumping = false;
+        Time.timeScale = 1f;
+    }
+
     void Start()
     {
         startPos = transform.position;
@@ -22,7 +30,9 @@ public class BG_MoveLeft : MonoBehaviour
 
         // Ensure the death UI is disabled at start (safe-guard)
         if (deathUIPanel != null)
+        {
             deathUIPanel.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -69,11 +79,19 @@ public class BG_MoveLeft : MonoBehaviour
 
     public void Restart()
     {
+        // Reset static state before reloading to avoid persisted state issues
+        jumpStart = false;
+        ColorSwitcherWater.isJumping = false;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("LevelTest Scene");
     }
 
     public void QuitMenu()
     {
+        // Reset static state before switching scenes
+        jumpStart = false;
+        ColorSwitcherWater.isJumping = false;
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
