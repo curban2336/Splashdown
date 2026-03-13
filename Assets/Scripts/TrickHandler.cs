@@ -58,12 +58,12 @@ public class TrickHandler : MonoBehaviour
 
     public void ActivateTrickTime()
     {
-        int trickNum = 3 + Mathf.FloorToInt(background.speed - 10 / 2);
+        int trickNum = 3 + Mathf.FloorToInt((background.speed - 10) / 4);
         if (background.speed <= 10)
         {
             trickNum = 3;
         }
-        water.jumpForce = 20f + (10 * ((trickNum - 3) / 2));
+        water.jumpForce = 20f + (10 * Mathf.FloorToInt((trickNum - 3) / 4));
         if (background.speed <= 10)
         {
             water.jumpForce = 20f;
