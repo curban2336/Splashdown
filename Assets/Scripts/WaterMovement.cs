@@ -3,8 +3,8 @@ using UnityEngine;
 public class WaterMovement : MonoBehaviour
 {
     [SerializeField] TrickHandler trickHandler;
-    [SerializeField] float bouyancy = 1f;
-    [SerializeField] float downSpeed = -2f;
+    [SerializeField] float bouyancy = 6f;
+    [SerializeField] float downSpeed = -11f;
     private Rect cameraRect;
     public static bool isInWater = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

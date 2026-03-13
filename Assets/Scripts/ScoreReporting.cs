@@ -27,7 +27,7 @@ public class ScoreReporting : MonoBehaviour
     {
         accumulatedScore = 0f;
         score = 0;
-        AddedScoreOnEnter = false;
+        addedScoreOnEnter = false;
     }
 
     void Update()

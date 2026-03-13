@@ -733,13 +733,14 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   correctColor: {r: 0.00965035, g: 1, b: 0, a: 1}
   wrongColor: {r: 1, g: 0, b: 0, a: 1}
-  pMovement: {fileID: 1595811044}
+  water: {fileID: 1595811047}
   trickTime: 0
   setTrick: 0
-  trickCount: 1
+  trickCount: 3
   trickIndex: 0
   trickTimeLimit: 100
   trickTimeLimitStart: 0
+  background: {fileID: 1561175179}
 --- !u!4 &483866946
 Transform:
   m_ObjectHideFlags: 0
@@ -1173,7 +1174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollowY
   player: {fileID: 1595811046}
   minY: -1
-  maxY: 10
+  maxY: 500
 --- !u!1 &679442853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,7 +2516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5de806b74a87c847ab1dc213d9f4fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BG_MoveLeft
-  speed: 10
+  speed: 40
   deathSpeedThreshold: 2
   deathUIPanel: {fileID: 1997116545}
 --- !u!61 &1561175180
@@ -2868,7 +2869,6 @@ MonoBehaviour:
   trickHandler: {fileID: 483866945}
   bouyancy: 6
   downSpeed: -11
-  isInWater: 1
 --- !u!212 &1595811045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2956,7 +2956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeColorBelowPoint
   canJumpTrigger: 0
   trickHandler: {fileID: 483866945}
-  jumpForce: 10
+  jumpForce: 20
   below: 0
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   belowColor: {r: 0.504717, g: 0.8381555, b: 1, a: 1}

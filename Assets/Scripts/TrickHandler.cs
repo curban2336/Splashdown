@@ -16,7 +16,8 @@ public class TrickHandler : MonoBehaviour
     [SerializeField] Color defaultColor;
     [SerializeField] Color correctColor;
     [SerializeField] Color wrongColor;
-    [SerializeField] WaterMovement pMovement;
+    //[SerializeField] WaterMovement pMovement;
+    [SerializeField] ColorSwitcherWater water;
 
     [SerializeField] bool trickTime = false;
     [SerializeField] bool setTrick = false;
@@ -26,6 +27,7 @@ public class TrickHandler : MonoBehaviour
     public float trickTimeLimitStart;
 
     [SerializeField] public static int wrongCount = 0;
+    [SerializeField] BG_MoveLeft background;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,8 +56,18 @@ public class TrickHandler : MonoBehaviour
         wrongCount++;
     }
 
-    public void ActivateTrickTime(int trickNum)
+    public void ActivateTrickTime()
     {
+        int trickNum = 3 + Mathf.FloorToInt(background.speed - 10 / 2);
+        if (background.speed <= 10)
+        {
+            trickNum = 3;
+        }
+        water.jumpForce = 20f + (10 * ((trickNum - 3) / 2));
+        if (background.speed <= 10)
+        {
+            water.jumpForce = 20f;
+        }
         trickCount = trickNum;
         trickTime = true;
         trickTimeLimit = 360f;
@@ -85,7 +97,7 @@ public class TrickHandler : MonoBehaviour
                     slots[i].arrowList[randomIndex].GetComponent<SpriteRenderer>().enabled = true;
                     trickSeq.Add(slots[i].arrowList[randomIndex]);
                 }
-                pMovement.isInWater = false;
+                WaterMovement.isInWater = false;
                 setTrick = true;
             }
             //trickTimeLimit -= Time.deltaTime;
@@ -101,46 +113,46 @@ public class TrickHandler : MonoBehaviour
                 trickSeq.Clear();
                 trickIndex = 0;
                 setTrick = false;
-                pMovement.isInWater = true;
+                WaterMovement.isInWater = true;
             }
             else
             {
-                if(Input.GetKeyUp(KeyCode.W) && trickSeq[trickIndex].CompareTag("up"))
+                if(Input.GetKeyDown(KeyCode.W) && trickSeq[trickIndex].CompareTag("up"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
                     trickIndex++;
                 }
-                else if(Input.GetKeyUp(KeyCode.W) && !trickSeq[trickIndex].CompareTag("up"))
+                else if(Input.GetKeyDown(KeyCode.W) && !trickSeq[trickIndex].CompareTag("up"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
                     NextTrick();
                 }
-                if (Input.GetKeyUp(KeyCode.S) && trickSeq[trickIndex].CompareTag("down"))
+                if (Input.GetKeyDown(KeyCode.S) && trickSeq[trickIndex].CompareTag("down"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
                     trickIndex++;
                 }
-                else if (Input.GetKeyUp(KeyCode.S) && !trickSeq[trickIndex].CompareTag("down"))
+                else if (Input.GetKeyDown(KeyCode.S) && !trickSeq[trickIndex].CompareTag("down"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
                     NextTrick();
                 }
-                if (Input.GetKeyUp(KeyCode.D) && trickSeq[trickIndex].CompareTag("right"))
+                if (Input.GetKeyDown(KeyCode.D) && trickSeq[trickIndex].CompareTag("right"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
                     trickIndex++;
                 }
-                else if (Input.GetKeyUp(KeyCode.D) && !trickSeq[trickIndex].CompareTag("right"))
+                else if (Input.GetKeyDown(KeyCode.D) && !trickSeq[trickIndex].CompareTag("right"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
                     NextTrick();
                 }
-                if (Input.GetKeyUp(KeyCode.A) && trickSeq[trickIndex].CompareTag("left"))
+                if (Input.GetKeyDown(KeyCode.A) && trickSeq[trickIndex].CompareTag("left"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
                     trickIndex++;
                 }
-                else if (Input.GetKeyUp(KeyCode.A) && !trickSeq[trickIndex].CompareTag("left"))
+                else if (Input.GetKeyDown(KeyCode.A) && !trickSeq[trickIndex].CompareTag("left"))
                 {
                     trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
                     NextTrick();
@@ -174,7 +186,7 @@ public class TrickHandler : MonoBehaviour
             trickSeq.Clear();
             trickIndex = 0;
             setTrick = false;
-            pMovement.isInWater = true;
+            WaterMovement.isInWater = true;
             wrongCount = 0;
         }
     }
