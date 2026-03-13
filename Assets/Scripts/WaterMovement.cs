@@ -6,7 +6,7 @@ public class WaterMovement : MonoBehaviour
     [SerializeField] float bouyancy = 1f;
     [SerializeField] float downSpeed = -2f;
     private Rect cameraRect;
-    public bool isInWater = true;
+    public static bool isInWater = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

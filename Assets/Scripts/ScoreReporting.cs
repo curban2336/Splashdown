@@ -9,8 +9,9 @@ public class ScoreReporting : MonoBehaviour
     public int totalTrickSuccesses = 0;
     public int totalTrickFails = 0;
 
-    
-    [SerializeField] private float multiplierStep = 0.25f; 
+    private bool addedScoreOnEnter = false;
+
+    [SerializeField] private float multiplierStep = 0.25f;
     [SerializeField] private float minMultiplier = 0.75f;
 
     void Awake()
@@ -26,6 +27,7 @@ public class ScoreReporting : MonoBehaviour
     {
         accumulatedScore = 0f;
         score = 0;
+        AddedScoreOnEnter = false;
     }
 
     void Update()
@@ -35,12 +37,28 @@ public class ScoreReporting : MonoBehaviour
         if (ColorSwitcherWater.isJumping)
         {
             accumulatedScore += currentSpeed * 100f * Time.deltaTime;
+            addedScoreOnEnter = false;
         }
-
-        float currentMultiplier = CalculateMultiplier();
-        score = Mathf.FloorToInt(accumulatedScore * currentMultiplier);
+        else
+        {
+            
+            if (!addedScoreOnEnter)
+            {
+                AddScore();
+                addedScoreOnEnter = true;
+                accumulatedScore = 0f;
+            }
+        }
     }
 
+    public void AddScore()
+    { 
+        if (WaterMovement.isInWater)
+        {
+            float currentMultiplier = CalculateMultiplier();
+            score += Mathf.FloorToInt(accumulatedScore * currentMultiplier);
+        }
+    }
     public float CalculateMultiplier()
     {
         int net = totalTrickSuccesses - totalTrickFails;
