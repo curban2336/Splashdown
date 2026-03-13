@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreReporting : MonoBehaviour
 {
@@ -9,10 +11,22 @@ public class ScoreReporting : MonoBehaviour
     public int totalTrickSuccesses = 0;
     public int totalTrickFails = 0;
 
+    private int currentTrickFails = 0;
     private bool addedScoreOnEnter = false;
+    private bool wasJumpingPrevFrame = false;
 
     [SerializeField] private float multiplierStep = 0.25f;
     [SerializeField] private float minMultiplier = 0.75f;
+
+    [Header("Trick Result UI")]
+    [SerializeField] private GameObject perfectUI;
+    [SerializeField] private GameObject greatUI;
+    [SerializeField] private GameObject coolUI;
+    [SerializeField] private GameObject okUI;
+    [SerializeField] private GameObject badUI;
+    [SerializeField] private float resultUIDuration = 1f;
+
+    private Coroutine resultUICoroutine;
 
     void Awake()
     {
@@ -28,16 +42,32 @@ public class ScoreReporting : MonoBehaviour
         accumulatedScore = 0f;
         score = 0;
         addedScoreOnEnter = false;
+        wasJumpingPrevFrame = ColorSwitcherWater.isJumping;
+
+        SetAllResultUIsActive(false);
     }
 
     void Update()
     {
         float currentSpeed = (bgMoveLeft != null) ? bgMoveLeft.speed : 0f;
+        bool isJumping = ColorSwitcherWater.isJumping;
 
-        if (ColorSwitcherWater.isJumping)
+        if (isJumping && !wasJumpingPrevFrame)
+        {
+            currentTrickFails = 0;
+            addedScoreOnEnter = false;
+            
+            if (resultUICoroutine != null)
+            {
+                StopCoroutine(resultUICoroutine);
+                resultUICoroutine = null;
+            }
+            SetAllResultUIsActive(false);
+        }
+
+        if (isJumping)
         {
             accumulatedScore += currentSpeed * 100f * Time.deltaTime;
-            addedScoreOnEnter = false;
         }
         else
         {
@@ -45,20 +75,25 @@ public class ScoreReporting : MonoBehaviour
             if (!addedScoreOnEnter)
             {
                 AddScore();
+                ShowResultForCurrentTrick();
                 addedScoreOnEnter = true;
-                accumulatedScore = 0f;
+                accumulatedScore = 0f; 
+                currentTrickFails = 0; 
             }
         }
+
+        wasJumpingPrevFrame = isJumping;
     }
 
     public void AddScore()
-    { 
+    {
         if (WaterMovement.isInWater)
         {
             float currentMultiplier = CalculateMultiplier();
             score += Mathf.FloorToInt(accumulatedScore * currentMultiplier);
         }
     }
+
     public float CalculateMultiplier()
     {
         int net = totalTrickSuccesses - totalTrickFails;
@@ -81,12 +116,78 @@ public class ScoreReporting : MonoBehaviour
     public void AddTrickFail(int count = 1)
     {
         totalTrickFails += count;
+        currentTrickFails += count;
+    }
+
+    private void ShowResultForCurrentTrick()
+    {
+        int defaultInputsPerTrick = 4;
+
+        ShowResultForFails(TrickHandler.wrongCount, defaultInputsPerTrick);
+    }
+
+    // Public method to allow caller to supply the actual input count for the trick
+    public void ShowResultForFails(int fails, int inputs)
+    {
+        // guard
+        if (inputs <= 0) inputs = 1;
+
+        float ratio = (float)fails / inputs;
+
+        GameObject toShow = null;
+        if (fails <= 0)
+        {
+            toShow = perfectUI;
+        }
+        else if (ratio >= 1f)
+        {
+            toShow = badUI;
+        }
+        else if (ratio <= 0.25f)
+        {
+            toShow = greatUI;
+        }
+        else if (ratio <= 0.5f)
+        {
+            toShow = coolUI;
+        }
+        else
+        {
+            toShow = okUI;
+        }
+
+        if (toShow != null)
+        {
+            if (resultUICoroutine != null)
+            {
+                StopCoroutine(resultUICoroutine);
+            }
+            resultUICoroutine = StartCoroutine(ShowUIForSeconds(toShow, resultUIDuration));
+        }
+    }
+
+    private IEnumerator ShowUIForSeconds(GameObject ui, float seconds)
+    {
+        SetAllResultUIsActive(false);
+        ui.SetActive(true);
+        yield return new WaitForSeconds(seconds);
+        ui.SetActive(false);
+        resultUICoroutine = null;
+    }
+
+    private void SetAllResultUIsActive(bool active)
+    {
+        if (perfectUI != null) perfectUI.SetActive(active);
+        if (greatUI != null) greatUI.SetActive(active);
+        if (coolUI != null) coolUI.SetActive(active);
+        if (okUI != null) okUI.SetActive(active);
+        if (badUI != null) badUI.SetActive(active);
     }
 
     public void ResetTrickCounters()
     {
         totalTrickSuccesses = 0;
-        totalTrickFails = 0;
+        currentTrickFails = 0;
     }
 
     public float GetRawScore()

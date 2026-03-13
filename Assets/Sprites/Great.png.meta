@@ -1,0 +1,1133 @@
+fileFormatVersion: 2
+guid: f811386d3d3c8454f898fa75f8f2afa5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7556016082631641370
+    second: Great_0
+  - first:
+      213: -289491752317467539
+    second: Great_1
+  - first:
+      213: 7490321355379749081
+    second: Great_2
+  - first:
+      213: -5445079970886286277
+    second: Great_3
+  - first:
+      213: 4484785000453784674
+    second: Great_4
+  - first:
+      213: -5032023297627714469
+    second: Great_5
+  - first:
+      213: 1894991999671862210
+    second: Great_6
+  - first:
+      213: -8972992842960668214
+    second: Great_7
+  - first:
+      213: 8411170602629528843
+    second: Great_8
+  - first:
+      213: -6379472436827957734
+    second: Great_9
+  - first:
+      213: 7817236944513959759
+    second: Great_10
+  - first:
+      213: -222825313588187547
+    second: Great_11
+  - first:
+      213: 6158163857932732400
+    second: Great_12
+  - first:
+      213: -8086347953348564818
+    second: Great_13
+  - first:
+      213: -466260381691873994
+    second: Great_14
+  - first:
+      213: 6187736446101521488
+    second: Great_15
+  - first:
+      213: 6102442110008288306
+    second: Great_16
+  - first:
+      213: -6009219704489603838
+    second: Great_17
+  - first:
+      213: 5627461294757976466
+    second: Great_18
+  - first:
+      213: -5163740075853705970
+    second: Great_19
+  - first:
+      213: 3171321807637630054
+    second: Great_20
+  - first:
+      213: -7427328531741254104
+    second: Great_21
+  - first:
+      213: -5068152307531712036
+    second: Great_22
+  - first:
+      213: 5326884966326125481
+    second: Great_23
+  - first:
+      213: -8061174508988849981
+    second: Great_24
+  - first:
+      213: -4020187173664673282
+    second: Great_25
+  - first:
+      213: 2232341463618741786
+    second: Great_26
+  - first:
+      213: -4417805496406356279
+    second: Great_27
+  - first:
+      213: 4319624215567451122
+    second: Great_28
+  - first:
+      213: 3560934026548571674
+    second: Great_29
+  - first:
+      213: -7205941963484970210
+    second: Great_30
+  - first:
+      213: -2765071399357894231
+    second: Great_31
+  - first:
+      213: -3770867566517056235
+    second: Great_32
+  - first:
+      213: 3531658529003506938
+    second: Great_33
+  - first:
+      213: 7459431886626219422
+    second: Great_34
+  - first:
+      213: -4867603024993340274
+    second: Great_35
+  - first:
+      213: 3694562277847222543
+    second: Great_36
+  - first:
+      213: 4308706663516966975
+    second: Great_37
+  - first:
+      213: 9122701672541250074
+    second: Great_38
+  - first:
+      213: 1439180786905585358
+    second: Great_39
+  - first:
+      213: 2929767445903587125
+    second: Great_40
+  - first:
+      213: 278538997990352121
+    second: Great_41
+  - first:
+      213: 7058065124508907515
+    second: Great_42
+  - first:
+      213: -1430242521674851990
+    second: Great_43
+  - first:
+      213: -7841752637278160445
+    second: Great_44
+  - first:
+      213: -4615900189095016889
+    second: Great_45
+  - first:
+      213: 4674352062129373978
+    second: Great_46
+  - first:
+      213: -5935732240899242105
+    second: Great_47
+  - first:
+      213: -813554607370953114
+    second: Great_48
+  - first:
+      213: -3761326421687741156
+    second: Great_49
+  - first:
+      213: 8265865035369694053
+    second: Great_50
+  - first:
+      213: 5384762063489055406
+    second: Great_51
+  - first:
+      213: -337782150544837797
+    second: Great_52
+  - first:
+      213: -6771601680960275158
+    second: Great_53
+  - first:
+      213: 6009343941856446396
+    second: Great_54
+  - first:
+      213: 4006183511198742963
+    second: Great_55
+  - first:
+      213: 3481280735032158206
+    second: Great_56
+  - first:
+      213: 8376131376679891480
+    second: Great_57
+  - first:
+      213: -4541877313810026152
+    second: Great_58
+  - first:
+      213: 6260784431976769619
+    second: Great_59
+  - first:
+      213: 384549353729424877
+    second: Great_60
+  - first:
+      213: -5550153984582835020
+    second: Great_61
+  - first:
+      213: -7564063061415281535
+    second: Great_62
+  - first:
+      213: 3753803979513538302
+    second: Great_63
+  - first:
+      213: -2452062953957669450
+    second: Great_64
+  - first:
+      213: 6008092784417527173
+    second: Great_65
+  - first:
+      213: -1506850663341496951
+    second: Great_66
+  - first:
+      213: -520230503156072809
+    second: Great_67
+  - first:
+      213: 2770079012345573593
+    second: Great_68
+  - first:
+      213: 4694774731152357964
+    second: Great_69
+  - first:
+      213: 3240945805541779765
+    second: Great_70
+  - first:
+      213: -2175108685324186289
+    second: Great_71
+  - first:
+      213: 7089070191369312271
+    second: Great_72
+  - first:
+      213: 832831549173381675
+    second: Great_73
+  - first:
+      213: 2426581289488787418
+    second: Great_74
+  - first:
+      213: -1659916443492543905
+    second: Great_75
+  - first:
+      213: -8807462823495149464
+    second: Great_76
+  - first:
+      213: -8921132375400104879
+    second: Great_77
+  - first:
+      213: 7275021441356509455
+    second: Great_78
+  - first:
+      213: -5419677543088612438
+    second: Great_79
+  - first:
+      213: -1755580690483011331
+    second: Great_80
+  - first:
+      213: 8640618213263856717
+    second: Great_81
+  - first:
+      213: 2105026156814662686
+    second: Great_82
+  - first:
+      213: -3990881060918347742
+    second: Great_83
+  - first:
+      213: -1869166897265954866
+    second: Great_84
+  - first:
+      213: -2118063954695751299
+    second: Great_85
+  - first:
+      213: 6630091661136281021
+    second: Great_86
+  - first:
+      213: -2086374667574048579
+    second: Great_87
+  - first:
+      213: 6612213010935097516
+    second: Great_88
+  - first:
+      213: 6156825154545254731
+    second: Great_89
+  - first:
+      213: -7894993019111995002
+    second: Great_90
+  - first:
+      213: 3176041705648065901
+    second: Great_91
+  - first:
+      213: -3183666651782257477
+    second: Great_92
+  - first:
+      213: -3925315579853428949
+    second: Great_93
+  - first:
+      213: -8999641492915303094
+    second: Great_94
+  - first:
+      213: 6153103244436257519
+    second: Great_95
+  - first:
+      213: -6832661030449800609
+    second: Great_96
+  - first:
+      213: -2579914380620520651
+    second: Great_97
+  - first:
+      213: -2194705522709932265
+    second: Great_98
+  - first:
+      213: -4017580748229861678
+    second: Great_99
+  - first:
+      213: -1830424124526339060
+    second: Great_100
+  - first:
+      213: 1232855195868652451
+    second: Great_101
+  - first:
+      213: 4894609665311761735
+    second: Great_102
+  - first:
+      213: 6208045777922384273
+    second: Great_103
+  - first:
+      213: 7920319142220618221
+    second: Great_104
+  - first:
+      213: -6068282108587013408
+    second: Great_105
+  - first:
+      213: 4160317188600878286
+    second: Great_106
+  - first:
+      213: -7069924947257131318
+    second: Great_107
+  - first:
+      213: -885096497273813079
+    second: Great_108
+  - first:
+      213: -1838514860334171998
+    second: Great_109
+  - first:
+      213: 7556450768176008852
+    second: Great_110
+  - first:
+      213: 8545087322089275052
+    second: Great_111
+  - first:
+      213: -481772227170332264
+    second: Great_112
+  - first:
+      213: -486669549687748674
+    second: Great_113
+  - first:
+      213: -4324203293596495206
+    second: Great_114
+  - first:
+      213: 8319420354705443161
+    second: Great_115
+  - first:
+      213: 789643476719131585
+    second: Great_116
+  - first:
+      213: 3148738705171283660
+    second: Great_117
+  - first:
+      213: -6366752370604985406
+    second: Great_118
+  - first:
+      213: -6803852500765230486
+    second: Great_119
+  - first:
+      213: 8482286021383800004
+    second: Great_120
+  - first:
+      213: -1887914418416341374
+    second: Great_121
+  - first:
+      213: -2893435056161319215
+    second: Great_122
+  - first:
+      213: -3228763653533627863
+    second: Great_123
+  - first:
+      213: 8266155242037444408
+    second: Great_124
+  - first:
+      213: 1401296755220586528
+    second: Great_125
+  - first:
+      213: -7897063807938933672
+    second: Great_126
+  - first:
+      213: 590170251350453134
+    second: Great_127
+  - first:
+      213: -6010906527332275654
+    second: Great_128
+  - first:
+      213: 1684715949519154645
+    second: Great_129
+  - first:
+      213: -9093203736567813566
+    second: Great_130
+  - first:
+      213: 8311645120373857267
+    second: Great_131
+  - first:
+      213: 8993429139383091972
+    second: Great_132
+  - first:
+      213: 97848014879873345
+    second: Great_133
+  - first:
+      213: -6145125302523205674
+    second: Great_134
+  - first:
+      213: -9040456905912440780
+    second: Great_135
+  - first:
+      213: 6129901845040318881
+    second: Great_136
+  - first:
+      213: 4703360836980982816
+    second: Great_137
+  - first:
+      213: 7246881334697720354
+    second: Great_138
+  - first:
+      213: 7680766279437176492
+    second: Great_139
+  - first:
+      213: -2049919955728589578
+    second: Great_140
+  - first:
+      213: -5943473422530321596
+    second: Great_141
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Great_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5120
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e63a950863a32790800000000000000
+      internalID: -7556016082631641370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 5120
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6446b9f8c48bfbf0800000000000000
+      internalID: -289491752317467539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_2
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5120
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0bee85697f2f760800000000000000
+      internalID: 7490321355379749081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_3
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5120
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b348ab1ad903f64b0800000000000000
+      internalID: -5445079970886286277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_4
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 5120
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2644c0e42382d3e30800000000000000
+      internalID: 4484785000453784674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c096bb879aa2ab0800000000000000
+      internalID: -5032023297627714469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_6
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3840
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c306a00f2d5c4a10800000000000000
+      internalID: 1894991999671862210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_7
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3840
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9f43fdc86897380800000000000000
+      internalID: -8972992842960668214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_8
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0df0fa491b7ab470800000000000000
+      internalID: 8411170602629528843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_9
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3840
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16597c5e9f8777a0800000000000000
+      internalID: -6379472436827957734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4780d265976c7c60800000000000000
+      internalID: 7817236944513959759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_11
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2560
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e6c90de8d58ecf0800000000000000
+      internalID: -222825313588187547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_12
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2560
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7cab4c661367550800000000000000
+      internalID: 6158163857932732400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2560
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8a376316587cf80800000000000000
+      internalID: -8086347953348564818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_14
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2560
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635fa6837a28789f0800000000000000
+      internalID: -466260381691873994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0548e9183814fd550800000000000000
+      internalID: 6187736446101521488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234ed6554ca30b450800000000000000
+      internalID: 6102442110008288306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_17
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d8e985486fa9ca0800000000000000
+      internalID: -6009219704489603838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_18
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2991f456b32c81e40800000000000000
+      internalID: 5627461294757976466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_19
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d8a4a72c5b658b0800000000000000
+      internalID: -5163740075853705970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cc0b4b16cc20c20800000000000000
+      internalID: 3171321807637630054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e50735d04dce890800000000000000
+      internalID: -7427328531741254104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9fef9145e4aa9b0800000000000000
+      internalID: -5068152307531712036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_23
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3cc3167a5ece940800000000000000
+      internalID: 5326884966326125481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Great_24
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c029477e74f02090800000000000000
+      internalID: -8061174508988849981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 186a3f07dd6ef4c49bd8eef0b35ed0e4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":1280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":true,"isAlternate":false}'
+    nameFileIdTable:
+      Great_0: -7556016082631641370
+      Great_1: -289491752317467539
+      Great_10: 7817236944513959759
+      Great_11: -222825313588187547
+      Great_12: 6158163857932732400
+      Great_13: -8086347953348564818
+      Great_14: -466260381691873994
+      Great_15: 6187736446101521488
+      Great_16: 6102442110008288306
+      Great_17: -6009219704489603838
+      Great_18: 5627461294757976466
+      Great_19: -5163740075853705970
+      Great_2: 7490321355379749081
+      Great_20: 3171321807637630054
+      Great_21: -7427328531741254104
+      Great_22: -5068152307531712036
+      Great_23: 5326884966326125481
+      Great_24: -8061174508988849981
+      Great_3: -5445079970886286277
+      Great_4: 4484785000453784674
+      Great_5: -5032023297627714469
+      Great_6: 1894991999671862210
+      Great_7: -8972992842960668214
+      Great_8: 8411170602629528843
+      Great_9: -6379472436827957734
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
