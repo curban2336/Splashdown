@@ -9,7 +9,7 @@ public class ScoreReporting : MonoBehaviour
     private float accumulatedScore = 0f;
 
     public int totalTrickSuccesses = 0;
-    public int totalTricks = 0;
+    public static int totalTricks = 0;
     public int totalTrickFails = TrickHandler.wrongCount;
 
     private int currentTrickFails = 0;
@@ -128,10 +128,7 @@ public class ScoreReporting : MonoBehaviour
     {
         int defaultInputsPerTrick = totalTricks;
 
-        totalTrickFails = TrickHandler.wrongCount;
-
-
-
+        //totalTrickFails = TrickHandler.wrongCount;
         ShowResultForFails(totalTrickFails, defaultInputsPerTrick);
     }
 

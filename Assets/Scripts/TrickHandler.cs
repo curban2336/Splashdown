@@ -70,6 +70,8 @@ public class TrickHandler : MonoBehaviour
             water.jumpForce = 20f;
         }
         trickCount = trickNum;
+        ScoreReporting.totalTricks = trickNum;
+
         trickTime = true;
         trickTimeLimit = 360f;
         trickTimeLimitStart = 360f;
@@ -171,6 +173,21 @@ public class TrickHandler : MonoBehaviour
                 trickSeq[i].GetComponent<SpriteRenderer>().enabled = false;
             }
             --trickCount;
+            setTrick = false;
+            trickSeq.Clear(); 
+        }
+
+        else if (trickTime && trickIndex < trickSeq.Count && !ColorSwitcherWater.isJumping)
+        {
+            trickIndex = 0;
+            trickTimeLimit = trickTimeLimitStart;
+            for (int i = 0; i < trickSeq.Count; i++)
+            {
+                trickSeq[i].GetComponent<SpriteRenderer>().color = defaultColor;
+                trickSeq[i].GetComponent<SpriteRenderer>().enabled = false;
+            }
+            --trickCount;
+            ++wrongCount;
             setTrick = false;
             trickSeq.Clear();
         }

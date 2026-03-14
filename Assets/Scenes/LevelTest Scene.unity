@@ -2991,7 +2991,6 @@ MonoBehaviour:
   bgMoveLeft: {fileID: 0}
   score: 0
   totalTrickSuccesses: 0
-  totalTricks: 0
   totalTrickFails: 0
   multiplierStep: 0.25
   minMultiplier: 0.75
@@ -3000,7 +2999,7 @@ MonoBehaviour:
   coolUI: {fileID: 461934195}
   okUI: {fileID: 154798027}
   badUI: {fileID: 1261037878}
-  resultUIDuration: 1
+  resultUIDuration: 2
   trickHandler: {fileID: 483866945}
 --- !u!1 &1564819868
 GameObject:
@@ -3306,6 +3305,7 @@ MonoBehaviour:
   trickHandler: {fileID: 483866945}
   bouyancy: 6
   downSpeed: -11
+  currentMovement: 0
 --- !u!212 &1595811045
 SpriteRenderer:
   m_ObjectHideFlags: 0
