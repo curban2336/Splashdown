@@ -10,6 +10,7 @@ TagManager:
   - right
   - Fast
   - Slow
+  - CloudTemplate
   layers:
   - Default
   - TransparentFX
