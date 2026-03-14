@@ -44,6 +44,7 @@ public class TrickHandler : MonoBehaviour
 
     void NextTrick()
     {
+        ++wrongCount;
         trickIndex = 8;
         trickTimeLimit = trickTimeLimitStart;
         for (int i = 0; i < trickSeq.Count; i++)
@@ -53,7 +54,7 @@ public class TrickHandler : MonoBehaviour
         }
         setTrick = false;
         trickSeq.Clear();
-        wrongCount++;
+        Debug.Log("Wrong Count: " + wrongCount);
     }
 
     public void ActivateTrickTime()
@@ -187,7 +188,7 @@ public class TrickHandler : MonoBehaviour
             trickIndex = 0;
             setTrick = false;
             WaterMovement.isInWater = true;
-            wrongCount = 0;
+            //wrongCount = 0;
         }
     }
 }

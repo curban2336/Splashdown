@@ -9,7 +9,8 @@ public class ScoreReporting : MonoBehaviour
     private float accumulatedScore = 0f;
 
     public int totalTrickSuccesses = 0;
-    public int totalTrickFails = 0;
+    public int totalTricks = 0;
+    public int totalTrickFails = TrickHandler.wrongCount;
 
     private int currentTrickFails = 0;
     private bool addedScoreOnEnter = false;
@@ -26,6 +27,8 @@ public class ScoreReporting : MonoBehaviour
     [SerializeField] private GameObject badUI;
     [SerializeField] private float resultUIDuration = 1f;
 
+    [SerializeField] TrickHandler trickHandler;
+
     private Coroutine resultUICoroutine;
 
     void Awake()
@@ -41,8 +44,8 @@ public class ScoreReporting : MonoBehaviour
     {
         accumulatedScore = 0f;
         score = 0;
-        addedScoreOnEnter = false;
-        wasJumpingPrevFrame = ColorSwitcherWater.isJumping;
+        addedScoreOnEnter = true;
+        wasJumpingPrevFrame = false;//ColorSwitcherWater.isJumping;
 
         SetAllResultUIsActive(false);
     }
@@ -51,17 +54,19 @@ public class ScoreReporting : MonoBehaviour
     {
         float currentSpeed = (bgMoveLeft != null) ? bgMoveLeft.speed : 0f;
         bool isJumping = ColorSwitcherWater.isJumping;
+        totalTrickFails = TrickHandler.wrongCount;
 
         if (isJumping && !wasJumpingPrevFrame)
         {
             currentTrickFails = 0;
+            totalTricks = trickHandler.trickCount;
             addedScoreOnEnter = false;
             
-            if (resultUICoroutine != null)
-            {
-                StopCoroutine(resultUICoroutine);
-                resultUICoroutine = null;
-            }
+            //if (resultUICoroutine != null)
+            //{
+            //    StopCoroutine(resultUICoroutine);
+            //    resultUICoroutine = null;
+            //}
             SetAllResultUIsActive(false);
         }
 
@@ -96,7 +101,7 @@ public class ScoreReporting : MonoBehaviour
 
     public float CalculateMultiplier()
     {
-        int net = totalTrickSuccesses - totalTrickFails;
+        int net = trickHandler.trickCount - totalTrickFails;
         float multiplier = 1f + net * multiplierStep;
         if (multiplier < minMultiplier) multiplier = minMultiplier;
         return multiplier;
@@ -121,14 +126,20 @@ public class ScoreReporting : MonoBehaviour
 
     private void ShowResultForCurrentTrick()
     {
-        int defaultInputsPerTrick = 4;
+        int defaultInputsPerTrick = totalTricks;
 
-        ShowResultForFails(TrickHandler.wrongCount, defaultInputsPerTrick);
+        totalTrickFails = TrickHandler.wrongCount;
+
+
+
+        ShowResultForFails(totalTrickFails, defaultInputsPerTrick);
     }
 
     // Public method to allow caller to supply the actual input count for the trick
     public void ShowResultForFails(int fails, int inputs)
     {
+        Debug.Log(fails);
+        Debug.Log(inputs);
         // guard
         if (inputs <= 0) inputs = 1;
 
@@ -156,14 +167,20 @@ public class ScoreReporting : MonoBehaviour
             toShow = okUI;
         }
 
+        Debug.Log(ratio);
+        Debug.Log(toShow.name);
+
         if (toShow != null)
         {
-            if (resultUICoroutine != null)
-            {
-                StopCoroutine(resultUICoroutine);
-            }
-            resultUICoroutine = StartCoroutine(ShowUIForSeconds(toShow, resultUIDuration));
+            StartCoroutine(ShowUIForSeconds(toShow, resultUIDuration));
+            //if (resultUICoroutine != null)
+            //{
+            //    Debug.Log("Stop previous UI coroutine");
+            //    StopCoroutine(resultUICoroutine);
+            //}
         }
+
+        TrickHandler.wrongCount = 0;
     }
 
     private IEnumerator ShowUIForSeconds(GameObject ui, float seconds)
@@ -172,16 +189,16 @@ public class ScoreReporting : MonoBehaviour
         ui.SetActive(true);
         yield return new WaitForSeconds(seconds);
         ui.SetActive(false);
-        resultUICoroutine = null;
+        //resultUICoroutine = null;
     }
 
     private void SetAllResultUIsActive(bool active)
     {
-        if (perfectUI != null) perfectUI.SetActive(active);
-        if (greatUI != null) greatUI.SetActive(active);
-        if (coolUI != null) coolUI.SetActive(active);
-        if (okUI != null) okUI.SetActive(active);
-        if (badUI != null) badUI.SetActive(active);
+        perfectUI.SetActive(active);
+        greatUI.SetActive(active);
+        coolUI.SetActive(active);
+        okUI.SetActive(active);
+        badUI.SetActive(active);
     }
 
     public void ResetTrickCounters()

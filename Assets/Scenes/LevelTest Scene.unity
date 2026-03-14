@@ -547,7 +547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -145}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &386660100
@@ -748,7 +748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -145}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &483866944
@@ -1529,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -145}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &790899593
@@ -1543,7 +1543,7 @@ GameObject:
   - component: {fileID: 790899594}
   - component: {fileID: 790899596}
   - component: {fileID: 790899595}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Great_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1678,7 +1678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -145}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &911038664
@@ -1872,7 +1872,7 @@ GameObject:
   - component: {fileID: 1010059776}
   - component: {fileID: 1010059778}
   - component: {fileID: 1010059777}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CoolShine_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2077,9 +2077,9 @@ Canvas:
   m_GameObject: {fileID: 1058869888}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 640530876}
+  m_PlaneDistance: 0.5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2238,7 +2238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -145}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1300818543
@@ -2927,7 +2927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5de806b74a87c847ab1dc213d9f4fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BG_MoveLeft
-  speed: 40
+  speed: 10
   deathSpeedThreshold: 2
   deathUIPanel: {fileID: 1997116545}
 --- !u!61 &1561175180
@@ -2991,6 +2991,7 @@ MonoBehaviour:
   bgMoveLeft: {fileID: 0}
   score: 0
   totalTrickSuccesses: 0
+  totalTricks: 0
   totalTrickFails: 0
   multiplierStep: 0.25
   minMultiplier: 0.75
@@ -3000,6 +3001,7 @@ MonoBehaviour:
   okUI: {fileID: 154798027}
   badUI: {fileID: 1261037878}
   resultUIDuration: 1
+  trickHandler: {fileID: 483866945}
 --- !u!1 &1564819868
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,7 +3909,7 @@ GameObject:
   - component: {fileID: 1806190478}
   - component: {fileID: 1806190480}
   - component: {fileID: 1806190479}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Perfect_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4020,7 +4022,7 @@ GameObject:
   - component: {fileID: 1966383111}
   - component: {fileID: 1966383113}
   - component: {fileID: 1966383112}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Okay_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -43,10 +43,11 @@ public class WaterMovement : MonoBehaviour
     void WaterUpdate()
     {
         Vector2 desiredPosition = this.transform.position;
-        desiredPosition += Vector2.up * bouyancy * Time.deltaTime;
+        desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, bouyancy), Time.deltaTime);
         if (Input.GetKey(KeyCode.Space))
         {
-            desiredPosition += Vector2.up * downSpeed * Time.deltaTime;
+            //desiredPosition += Vector2.up * downSpeed * Time.deltaTime;
+            desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, 2*downSpeed), Time.deltaTime);
         }
         Vector2 allowedPosition = new Vector2(Mathf.Clamp(desiredPosition.x, cameraRect.xMin, cameraRect.xMax), Mathf.Clamp(desiredPosition.y, cameraRect.yMin, cameraRect.yMax));
 
