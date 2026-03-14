@@ -1,0 +1,449 @@
+fileFormatVersion: 2
+guid: 5a837250916c1ac4d88f2cf4ddd9acd7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6137111775737050749
+    second: Stars01 (1)_0
+  - first:
+      213: -5587013842532321607
+    second: Stars01 (1)_1
+  - first:
+      213: -1034150506553961633
+    second: Stars01 (1)_2
+  - first:
+      213: -6133964293873160911
+    second: Stars01 (1)_3
+  - first:
+      213: 2094084035771913443
+    second: Stars01 (1)_4
+  - first:
+      213: -5442287784096312840
+    second: Stars01 (1)_5
+  - first:
+      213: 7791097557099350791
+    second: Stars01 (1)_6
+  - first:
+      213: 3534544878894092246
+    second: Stars01 (1)_7
+  - first:
+      213: 864726368303472091
+    second: Stars01 (1)_8
+  - first:
+      213: 4183664065650877280
+    second: Stars01 (1)_9
+  - first:
+      213: 6937456926927486297
+    second: Stars01 (1)_10
+  - first:
+      213: -4767539961271863403
+    second: Stars01 (1)_11
+  - first:
+      213: 1639356956102371812
+    second: Stars01 (1)_12
+  - first:
+      213: -1681520966093293638
+    second: Stars01 (1)_13
+  - first:
+      213: 1174020617651433785
+    second: Stars01 (1)_14
+  - first:
+      213: -4089309283502982475
+    second: Stars01 (1)_15
+  - first:
+      213: 5403595667426813878
+    second: Stars01 (1)_16
+  - first:
+      213: -761136398950172335
+    second: Stars01 (1)_17
+  - first:
+      213: 1511192651838104316
+    second: Stars01 (1)_18
+  - first:
+      213: 6866572741800738398
+    second: Stars01 (1)_19
+  - first:
+      213: 6685247715186475505
+    second: Stars01 (1)_20
+  - first:
+      213: -4543751307674652797
+    second: Stars01 (1)_21
+  - first:
+      213: 7685227879899533676
+    second: Stars01 (1)_22
+  - first:
+      213: 5082734277485026676
+    second: Stars01 (1)_23
+  - first:
+      213: 2594435151350754253
+    second: Stars01 (1)_24
+  - first:
+      213: -3454943244420107625
+    second: Stars01 (1)_25
+  - first:
+      213: 3105308539599015126
+    second: Stars01 (1)_26
+  - first:
+      213: -3991281257721684957
+    second: Stars01 (1)_27
+  - first:
+      213: -1690878489015605610
+    second: Stars01 (1)_28
+  - first:
+      213: 2162035449560121764
+    second: Stars01 (1)_29
+  - first:
+      213: 4169657980020306335
+    second: Stars01 (1)_30
+  - first:
+      213: -8105955981971539317
+    second: Stars01 (1)_31
+  - first:
+      213: -4168619150796162331
+    second: Stars01 (1)_32
+  - first:
+      213: 34367519566775033
+    second: Stars01 (1)_33
+  - first:
+      213: 3365519436032813222
+    second: Stars01 (1)_34
+  - first:
+      213: -452494924539587401
+    second: Stars01 (1)_35
+  - first:
+      213: 4773200817057613655
+    second: Stars01 (1)_36
+  - first:
+      213: 5063342946832025524
+    second: Stars01 (1)_37
+  - first:
+      213: 476486982339323176
+    second: Stars01 (1)_38
+  - first:
+      213: 9219944800985645369
+    second: Stars01 (1)_39
+  - first:
+      213: 2106855645393233559
+    second: Stars01 (1)_40
+  - first:
+      213: 3391595220499675085
+    second: Stars01 (1)_41
+  - first:
+      213: 8267577285054235352
+    second: Stars01 (1)_42
+  - first:
+      213: -8563354234285392257
+    second: Stars01 (1)_43
+  - first:
+      213: -3968729123825013691
+    second: Stars01 (1)_44
+  - first:
+      213: 8019829104076966260
+    second: Stars01 (1)_45
+  - first:
+      213: 6011444912104136717
+    second: Stars01 (1)_46
+  - first:
+      213: -8938013550242389902
+    second: Stars01 (1)_47
+  - first:
+      213: -3345338352187725615
+    second: Stars01 (1)_48
+  - first:
+      213: 3169757162928901223
+    second: Stars01 (1)_49
+  - first:
+      213: -162303971542352407
+    second: Stars01 (1)_50
+  - first:
+      213: 39264045035034163
+    second: Stars01 (1)_51
+  - first:
+      213: 7380584893788001433
+    second: Stars01 (1)_52
+  - first:
+      213: -8922608990428597859
+    second: Stars01 (1)_53
+  - first:
+      213: 9217382197872182129
+    second: Stars01 (1)_54
+  - first:
+      213: -8058468628486691230
+    second: Stars01 (1)_55
+  - first:
+      213: -4764911714607426255
+    second: Stars01 (1)_56
+  - first:
+      213: 2809710222399805848
+    second: Stars01 (1)_57
+  - first:
+      213: -142208416049200194
+    second: Stars01 (1)_58
+  - first:
+      213: -3438009497143828800
+    second: Stars01 (1)_59
+  - first:
+      213: 562008527841468758
+    second: Stars01 (1)_60
+  - first:
+      213: -8405050039506136430
+    second: Stars01 (1)_61
+  - first:
+      213: -5252068648232784855
+    second: Stars01 (1)_62
+  - first:
+      213: 4303945262731674190
+    second: Stars01 (1)_63
+  - first:
+      213: 1032211014393274915
+    second: Stars01 (1)_64
+  - first:
+      213: 4891940893216139834
+    second: Stars01 (1)_65
+  - first:
+      213: -8411894290344064782
+    second: Stars01 (1)_66
+  - first:
+      213: -318531222616252997
+    second: Stars01 (1)_67
+  - first:
+      213: -4508797047933914240
+    second: Stars01 (1)_68
+  - first:
+      213: 5184227784535823187
+    second: Stars01 (1)_69
+  - first:
+      213: -2069545857388697029
+    second: Stars01 (1)_70
+  - first:
+      213: -2722894244267375670
+    second: Stars01 (1)_71
+  - first:
+      213: 1838701186594436525
+    second: Stars01 (1)_72
+  - first:
+      213: -2797147222428422281
+    second: Stars01 (1)_73
+  - first:
+      213: -803324810911362869
+    second: Stars01 (1)_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stars01 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38983541b5994daa0800000000000000
+      internalID: -6137111775737050749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars01 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6bba0f280f672b0800000000000000
+      internalID: -5587013842532321607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars01 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f539f8ce795f5a1f0800000000000000
+      internalID: -1034150506553961633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stars01 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13da2ce49f7cfdaa0800000000000000
+      internalID: -6133964293873160911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8b25d3c662c97a942adbcd518ae24e04
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":1280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Stars01 (1)_0: -6137111775737050749
+      Stars01 (1)_1: -5587013842532321607
+      Stars01 (1)_2: -1034150506553961633
+      Stars01 (1)_3: -6133964293873160911
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

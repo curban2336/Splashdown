@@ -25,7 +25,7 @@ public class BG_MoveLeft : MonoBehaviour
 
     void Start()
     {
-        startPos = transform.position;
+        startPos = new Vector2(21.68f, transform.position.y);
         repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
 
         // Ensure the death UI is disabled at start (safe-guard)
@@ -40,7 +40,7 @@ public class BG_MoveLeft : MonoBehaviour
     {
         if (isDead) return;
 
-        if (transform.position.x < startPos.x - 16)
+        if (transform.position.x < -13f)
         {
             transform.position = startPos;
         }
