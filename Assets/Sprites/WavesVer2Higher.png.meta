@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: a4ba414e78eabfb44a731527d4a1fc9f
+guid: 953efa70efd50814aa176e052b82009f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8045445475931857111
-    second: WavesVer2 (1)_0
+      213: 7587510184680549187
+    second: WavesVer2Higher_0
   - first:
-      213: 5565586020146874172
-    second: WavesVer2 (1)_1
+      213: 4093730335070910062
+    second: WavesVer2Higher_1
   - first:
-      213: -387531937441792575
-    second: WavesVer2 (1)_2
+      213: -3602146169916550631
+    second: WavesVer2Higher_2
   - first:
-      213: -4681739403094853327
-    second: WavesVer2 (1)_3
+      213: -3872376831487092726
+    second: WavesVer2Higher_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WavesVer2 (1)_0
+      name: WavesVer2Higher_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7d021b4a80a27af60800000000000000
-      internalID: 8045445475931857111
+      spriteID: 34bea8700504c4960800000000000000
+      internalID: 7587510184680549187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_1
+      name: WavesVer2Higher_1
       rect:
         serializedVersion: 2
         x: 1280
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c370cb16ffeec3d40800000000000000
-      internalID: 5565586020146874172
+      spriteID: e66742cdc0adfc830800000000000000
+      internalID: 4093730335070910062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_2
+      name: WavesVer2Higher_2
       rect:
         serializedVersion: 2
         x: 2560
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cdb9a191c53f9af0800000000000000
-      internalID: -387531937441792575
+      spriteID: 9121719b42b920ec0800000000000000
+      internalID: -3602146169916550631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_3
+      name: WavesVer2Higher_3
       rect:
         serializedVersion: 2
         x: 0
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 139f49b51de170fb0800000000000000
-      internalID: -4681739403094853327
+      spriteID: a0852cad9cd824ac0800000000000000
+      internalID: -3872376831487092726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_4
+      name: WavesVer2Higher_4
       rect:
         serializedVersion: 2
         x: 1280
@@ -225,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a47e47b701db0c4ea2bb016dcd3a9a0
-      internalID: 2084115291
+      spriteID: c21ef09a165cdb04cb233f57ed93d6c5
+      internalID: 2111759775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_5
+      name: WavesVer2Higher_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -247,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 859d37ff09b2f1c4f93032433a4896ef
-      internalID: 70279240
+      spriteID: 0223f1f14504463498b3562cef5ac048
+      internalID: 1603447927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_6
+      name: WavesVer2Higher_6
       rect:
         serializedVersion: 2
         x: 0
@@ -269,14 +269,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98522c2991654984bab7741a7b74793d
-      internalID: -601269796
+      spriteID: b1d3c1ca3d17bf14fbe385eb1f885cec
+      internalID: -93722186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_7
+      name: WavesVer2Higher_7
       rect:
         serializedVersion: 2
         x: 1280
@@ -291,14 +291,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b01485e5e11d2b245b56dcd343cebc19
-      internalID: -973876228
+      spriteID: 50097ff92dec31346b43af0024ca92f5
+      internalID: 1466377487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_8
+      name: WavesVer2Higher_8
       rect:
         serializedVersion: 2
         x: 2560
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb9c6033403cd74a9592d0fcaa43f34
-      internalID: -416326314
+      spriteID: 1360ffb3036a8cf49b403354586ec2fb
+      internalID: -335083883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_9
+      name: WavesVer2Higher_9
       rect:
         serializedVersion: 2
         x: 0
@@ -335,14 +335,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c20e0204c7d1fdc41b4f2aee9513eb51
-      internalID: 2071736548
+      spriteID: 3e104b1455c3abf408c908080907debf
+      internalID: -1323534542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_10
+      name: WavesVer2Higher_10
       rect:
         serializedVersion: 2
         x: 1280
@@ -357,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e1f4c951c6e12b48bbaa12d8f8b1411
-      internalID: 1760807546
+      spriteID: 69ff2a82bf0bcd141b3572ba5d7d1478
+      internalID: 2114012933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WavesVer2 (1)_11
+      name: WavesVer2Higher_11
       rect:
         serializedVersion: 2
         x: 2560
@@ -379,8 +379,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d95bde959acb8b2409220f12c78d8b01
-      internalID: -305618820
+      spriteID: 12461aac0e81e5445be30e86980b8973
+      internalID: -1650404315
       vertices: []
       indices: 
       edges: []
@@ -389,7 +389,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d3909c1c030657a4ebc2f9ed2cadc073
+    spriteID: 2b8286d3e7e12d344b9d722f36d105a9
     internalID: 0
     vertices: []
     indices: 
@@ -401,18 +401,18 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":1280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      WavesVer2 (1)_0: 8045445475931857111
-      WavesVer2 (1)_1: 5565586020146874172
-      WavesVer2 (1)_10: 1760807546
-      WavesVer2 (1)_11: -305618820
-      WavesVer2 (1)_2: -387531937441792575
-      WavesVer2 (1)_3: -4681739403094853327
-      WavesVer2 (1)_4: 2084115291
-      WavesVer2 (1)_5: 70279240
-      WavesVer2 (1)_6: -601269796
-      WavesVer2 (1)_7: -973876228
-      WavesVer2 (1)_8: -416326314
-      WavesVer2 (1)_9: 2071736548
+      WavesVer2Higher_0: 7587510184680549187
+      WavesVer2Higher_1: 4093730335070910062
+      WavesVer2Higher_10: 2114012933
+      WavesVer2Higher_11: -1650404315
+      WavesVer2Higher_2: -3602146169916550631
+      WavesVer2Higher_3: -3872376831487092726
+      WavesVer2Higher_4: 2111759775
+      WavesVer2Higher_5: 1603447927
+      WavesVer2Higher_6: -93722186
+      WavesVer2Higher_7: 1466377487
+      WavesVer2Higher_8: -335083883
+      WavesVer2Higher_9: -1323534542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

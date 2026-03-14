@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 public class TrickHandler : MonoBehaviour
 {
     [System.Serializable]
@@ -13,6 +14,9 @@ public class TrickHandler : MonoBehaviour
     }
     public List<serializableClass> slots = new List<serializableClass>();
     [SerializeField] List<GameObject> trickSeq;
+    [SerializeField] List<Sprite> correctSprites; // 0 = up, 1 = down, 2 = right, 3 = left
+    [SerializeField] List<Sprite> wrongSprites; // 0 = up, 1 = down, 2 = right, 3 = left
+    [SerializeField] List<Sprite> defaultSprites; // 0 = up, 1 = down, 2 = right, 3 = left
     [SerializeField] Color defaultColor;
     [SerializeField] Color correctColor;
     [SerializeField] Color wrongColor;
@@ -71,7 +75,6 @@ public class TrickHandler : MonoBehaviour
         }
         trickCount = trickNum;
         ScoreReporting.totalTricks = trickNum;
-
         trickTime = true;
         trickTimeLimit = 360f;
         trickTimeLimitStart = 360f;
@@ -79,9 +82,25 @@ public class TrickHandler : MonoBehaviour
 
     IEnumerator Wait()
     {
-        for (int i = 0; i < trickSeq.Count; i++)
+        foreach (GameObject obj in trickSeq)
         {
-            trickSeq[i].GetComponent<SpriteRenderer>().color = defaultColor;
+            if (obj.CompareTag("up"))
+            {
+                obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[0];
+            }
+            else if (obj.CompareTag("down"))
+            {
+                obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[1];
+            }
+            else if (obj.CompareTag("right"))
+            {
+                obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[2];
+            }
+            else if (obj.CompareTag("left"))
+            {
+                obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[3];
+            }
+            //obj.GetComponent<SpriteRenderer>().enabled = false;
         }
         yield return new WaitForSeconds(0.5f);
     }
@@ -92,7 +111,7 @@ public class TrickHandler : MonoBehaviour
 
         if (trickTime)
         {
-            if(!setTrick)
+            if (!setTrick)
             {
                 for (int i = 0; i < slots.Count; i++)
                 {
@@ -120,44 +139,44 @@ public class TrickHandler : MonoBehaviour
             }
             else
             {
-                if(Input.GetKeyDown(KeyCode.W) && trickSeq[trickIndex].CompareTag("up"))
+                if (Input.GetKeyDown(KeyCode.W) && trickSeq[trickIndex].CompareTag("up"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = correctSprites[0];
                     trickIndex++;
                 }
-                else if(Input.GetKeyDown(KeyCode.W) && !trickSeq[trickIndex].CompareTag("up"))
+                else if (Input.GetKeyDown(KeyCode.W) && !trickSeq[trickIndex].CompareTag("up"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = wrongSprites[0];
                     NextTrick();
                 }
                 if (Input.GetKeyDown(KeyCode.S) && trickSeq[trickIndex].CompareTag("down"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = correctSprites[1];
                     trickIndex++;
                 }
                 else if (Input.GetKeyDown(KeyCode.S) && !trickSeq[trickIndex].CompareTag("down"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = wrongSprites[1];
                     NextTrick();
                 }
                 if (Input.GetKeyDown(KeyCode.D) && trickSeq[trickIndex].CompareTag("right"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = correctSprites[2];
                     trickIndex++;
                 }
                 else if (Input.GetKeyDown(KeyCode.D) && !trickSeq[trickIndex].CompareTag("right"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = wrongSprites[2];
                     NextTrick();
                 }
                 if (Input.GetKeyDown(KeyCode.A) && trickSeq[trickIndex].CompareTag("left"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = correctColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = correctSprites[3];
                     trickIndex++;
                 }
                 else if (Input.GetKeyDown(KeyCode.A) && !trickSeq[trickIndex].CompareTag("left"))
                 {
-                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().color = wrongColor;
+                    trickSeq[trickIndex].GetComponent<SpriteRenderer>().sprite = wrongSprites[3];
                     NextTrick();
                 }
             }
@@ -167,24 +186,53 @@ public class TrickHandler : MonoBehaviour
         {
             trickIndex = 0;
             trickTimeLimit = trickTimeLimitStart;
-            for (int i = 0; i < trickSeq.Count; i++)
+            foreach (GameObject obj in trickSeq)
             {
-                trickSeq[i].GetComponent<SpriteRenderer>().color = defaultColor;
-                trickSeq[i].GetComponent<SpriteRenderer>().enabled = false;
+                if (obj.CompareTag("up"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[0];
+                }
+                else if (obj.CompareTag("down"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[1];
+                }
+                else if (obj.CompareTag("right"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[2];
+                }
+                else if (obj.CompareTag("left"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[3];
+                }
+                obj.GetComponent<SpriteRenderer>().enabled = false;
             }
             --trickCount;
             setTrick = false;
-            trickSeq.Clear(); 
+            trickSeq.Clear();
         }
-
         else if (trickTime && trickIndex < trickSeq.Count && !ColorSwitcherWater.isJumping)
         {
             trickIndex = 0;
             trickTimeLimit = trickTimeLimitStart;
-            for (int i = 0; i < trickSeq.Count; i++)
+            foreach (GameObject obj in trickSeq)
             {
-                trickSeq[i].GetComponent<SpriteRenderer>().color = defaultColor;
-                trickSeq[i].GetComponent<SpriteRenderer>().enabled = false;
+                if (obj.CompareTag("up"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[0];
+                }
+                else if (obj.CompareTag("down"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[1];
+                }
+                else if (obj.CompareTag("right"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[2];
+                }
+                else if (obj.CompareTag("left"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[3];
+                }
+                obj.GetComponent<SpriteRenderer>().enabled = false;
             }
             --trickCount;
             ++wrongCount;
@@ -198,8 +246,23 @@ public class TrickHandler : MonoBehaviour
             trickTimeLimit = trickTimeLimitStart;
             foreach (GameObject obj in trickSeq)
             {
+                if (obj.CompareTag("up"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[0];
+                }
+                else if (obj.CompareTag("down"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[1];
+                }
+                else if (obj.CompareTag("right"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[2];
+                }
+                else if (obj.CompareTag("left"))
+                {
+                    obj.GetComponent<SpriteRenderer>().sprite = defaultSprites[3];
+                }
                 obj.GetComponent<SpriteRenderer>().enabled = false;
-                obj.GetComponent<SpriteRenderer>().color = defaultColor;
             }
             trickSeq.Clear();
             trickIndex = 0;

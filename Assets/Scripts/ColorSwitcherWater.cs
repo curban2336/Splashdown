@@ -7,7 +7,7 @@ public class ColorSwitcherWater : MonoBehaviour
 
     public TrickHandler trickHandler;
 
-    public static float thresholdY = -0.5f;
+    public static float thresholdY = 0.75f;
     public float jumpForce = 10f;
     public bool below;
 
