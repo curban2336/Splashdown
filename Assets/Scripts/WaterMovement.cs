@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class WaterMovement : MonoBehaviour
@@ -5,6 +6,7 @@ public class WaterMovement : MonoBehaviour
     [SerializeField] TrickHandler trickHandler;
     [SerializeField] float bouyancy = 6f;
     [SerializeField] float downSpeed = -11f;
+    [SerializeField] float currentMovement = 0f;
     private Rect cameraRect;
     public static bool isInWater = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,15 +45,28 @@ public class WaterMovement : MonoBehaviour
     void WaterUpdate()
     {
         Vector2 desiredPosition = this.transform.position;
-        desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, bouyancy), Time.deltaTime);
         if (Input.GetKey(KeyCode.Space))
         {
-            //desiredPosition += Vector2.up * downSpeed * Time.deltaTime;
-            desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, 2*downSpeed), Time.deltaTime);
+            currentMovement -= 60 * Time.deltaTime;
+            if(currentMovement < downSpeed)
+            {
+                currentMovement = downSpeed;
+            }
         }
+        else
+        {
+            currentMovement += 60 * Time.deltaTime;
+            if (currentMovement > bouyancy)
+            {
+                currentMovement = bouyancy;
+            }
+        }
+        desiredPosition += new Vector2(0f, currentMovement * Time.deltaTime);
+        //desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, currentMovement), Time.deltaTime);
         Vector2 allowedPosition = new Vector2(Mathf.Clamp(desiredPosition.x, cameraRect.xMin, cameraRect.xMax), Mathf.Clamp(desiredPosition.y, cameraRect.yMin, cameraRect.yMax));
 
         this.transform.position = allowedPosition;
+        //currentMovement = 0f;
     }
 
     public void RaiseBouyancy()
