@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 15cfffcf43d480f40a0b204429b8c611
+guid: 16ff2659329432e4ca3d84bde3f5a0d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 224842772626269432
-    second: MineSpriteBob (1)_0
+      213: 7110610740551577482
+    second: MineSpriteBob (2)_0
   - first:
-      213: 5490733798643340656
-    second: MineSpriteBob (1)_1
+      213: -6650646258295659245
+    second: MineSpriteBob (2)_1
   - first:
-      213: 6687118811672018807
-    second: MineSpriteBob (1)_2
+      213: 6997308988784343294
+    second: MineSpriteBob (2)_2
   - first:
-      213: 7232563354048712801
-    second: MineSpriteBob (1)_3
+      213: 6403494496048485520
+    second: MineSpriteBob (2)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MineSpriteBob (1)_0
+      name: MineSpriteBob (2)_0
       rect:
         serializedVersion: 2
         x: 19
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f4e3b87f4dce1300800000000000000
-      internalID: 224842772626269432
+      spriteID: a8f67ae7bc6fda260800000000000000
+      internalID: 7110610740551577482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineSpriteBob (1)_1
+      name: MineSpriteBob (2)_1
       rect:
         serializedVersion: 2
         x: 1299
-        y: 1319
+        y: 1309
         width: 1242
         height: 1232
       alignment: 0
@@ -146,18 +146,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0751e587c41033c40800000000000000
-      internalID: 5490733798643340656
+      spriteID: 315a187f67824b3a0800000000000000
+      internalID: -6650646258295659245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineSpriteBob (1)_2
+      name: MineSpriteBob (2)_2
       rect:
         serializedVersion: 2
         x: 19
-        y: 19
+        y: 9
         width: 1242
         height: 1232
       alignment: 0
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77ffa8c112b6dcc50800000000000000
-      internalID: 6687118811672018807
+      spriteID: ef87324b37f6b1160800000000000000
+      internalID: 6997308988784343294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MineSpriteBob (1)_3
+      name: MineSpriteBob (2)_3
       rect:
         serializedVersion: 2
         x: 1299
@@ -190,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 160d49dfc0a3f5460800000000000000
-      internalID: 7232563354048712801
+      spriteID: 09493262158cdd850800000000000000
+      internalID: 6403494496048485520
       vertices: []
       indices: 
       edges: []
@@ -210,10 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MineSpriteBob (1)_0: 224842772626269432
-      MineSpriteBob (1)_1: 5490733798643340656
-      MineSpriteBob (1)_2: 6687118811672018807
-      MineSpriteBob (1)_3: 7232563354048712801
+      MineSpriteBob (2)_0: 7110610740551577482
+      MineSpriteBob (2)_1: -6650646258295659245
+      MineSpriteBob (2)_2: 6997308988784343294
+      MineSpriteBob (2)_3: 6403494496048485520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
