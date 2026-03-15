@@ -21,7 +21,7 @@ public class TrickHandler : MonoBehaviour
     [SerializeField] Color correctColor;
     [SerializeField] Color wrongColor;
     [SerializeField] WaterMovement pMovement;
-    [SerializeField] ColorSwitcherWater water;
+    [SerializeField] public ColorSwitcherWater water;
 
     [SerializeField] bool trickTime = false;
     [SerializeField] bool setTrick = false;

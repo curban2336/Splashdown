@@ -34,8 +34,11 @@ public class WaterMovement : MonoBehaviour
         if (ColorSwitcherWater.isJumping)
         {
             isInWater = false;
-            dolphoMove.SetActive(false);
-            dolphoFly.SetActive(true);
+            if(trickHandler.water.canJumpTrigger)
+            {
+                dolphoMove.SetActive(false);
+                dolphoFly.SetActive(true);
+            }
         }
         else
         {
