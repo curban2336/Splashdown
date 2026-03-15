@@ -7,6 +7,7 @@ public class MineTwoScript : MonoBehaviour
     public float speed = 10;
     public float deathSpeedThreshold = 2f; 
     public static bool jumpStart = false;
+    private int RollHeightTwo;
 
     [SerializeField] private GameObject deathUIPanel; // assign the Canvas object (panel/text) in Inspector
 
@@ -42,7 +43,22 @@ public class MineTwoScript : MonoBehaviour
         if (transform.position.x < startPos.x - 30)
         {
             transform.position = startPos;
-            //Send Message to roll range in Mine Manager
+            gameObject.SendMessage("MineReachEnd", 5.0);
+            int RollHeightTwo = Random.Range(1, 4);
+            if(RollHeightTwo == 1)
+            {
+                transform.position = new Vector3(20, -1, 0);
+            }
+
+            if(RollHeightTwo == 2)
+            {
+                transform.position = new Vector3(20, -3, 0);
+            }
+
+            if(RollHeightTwo == 3)
+            {
+                transform.position = new Vector3(20, -5, 0);
+            }
         }
 
         if(!ColorSwitcherWater.isJumping && !jumpStart)

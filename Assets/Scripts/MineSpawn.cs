@@ -14,23 +14,24 @@ public class MineSpawn : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        int RollHeightOne = Random.Range(1, 4);
-        int RollHeightTwo = Random.Range(1, 4);
+        //int RollHeightOne = Random.Range(1, 4);
+        //int RollHeightTwo = Random.Range(1, 4);
     }
 
     public void MineReachEnd()
     {
         Debug.Log("Reach End");
-        int RollHeightOne = Random.Range(1, 4);
-        int RollHeightTwo = Random.Range(1, 4);
-        Debug.Log(RollHeightOne);
-        Debug.Log(RollHeightTwo);
+        //int RollHeightOne = Random.Range(1, 4);
+        //int RollHeightTwo = Random.Range(1, 4);
+        //Debug.Log(RollHeightOne);
+        //Debug.Log(RollHeightTwo);
+        //gameObject.SendMessage("RollHeightOneMove", RollHeightOne);
+        //gameObject.SendMessage("RollHeightTwoMove", RollHeightTwo);
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.SendMessage("RollHeightOneMove", RollHeightOne);
-        gameObject.SendMessage("RollHeightTwoMove", RollHeightTwo);
+
     }
 }

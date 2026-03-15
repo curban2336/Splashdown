@@ -7,6 +7,7 @@ public class MineOneScript : MonoBehaviour
     public float speed = 10;
     public float deathSpeedThreshold = 2f; 
     public static bool jumpStart = false;
+    private int RollHeightOne;
 
     [SerializeField] private GameObject deathUIPanel; // assign the Canvas object (panel/text) in Inspector
 
@@ -43,6 +44,21 @@ public class MineOneScript : MonoBehaviour
         {
             transform.position = startPos;
             gameObject.SendMessage("MineReachEnd", 5.0);
+            int RollHeightOne = Random.Range(1, 4);
+            if(RollHeightOne == 1)
+            {
+                transform.position = new Vector3(20, -1, 0);
+            }
+
+            if(RollHeightOne == 2)
+            {
+                transform.position = new Vector3(20, -3, 0);
+            }
+
+            if(RollHeightOne == 3)
+            {
+                transform.position = new Vector3(20, -5, 0);
+            }
         }
 
         if(!ColorSwitcherWater.isJumping && !jumpStart)
