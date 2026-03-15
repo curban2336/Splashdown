@@ -20,7 +20,7 @@ public class TrickHandler : MonoBehaviour
     [SerializeField] Color defaultColor;
     [SerializeField] Color correctColor;
     [SerializeField] Color wrongColor;
-    //[SerializeField] WaterMovement pMovement;
+    [SerializeField] WaterMovement pMovement;
     [SerializeField] ColorSwitcherWater water;
 
     [SerializeField] bool trickTime = false;
@@ -209,6 +209,7 @@ public class TrickHandler : MonoBehaviour
             --trickCount;
             setTrick = false;
             trickSeq.Clear();
+            pMovement.StartCoroutine("TrickCoroutine");
         }
         else if (trickTime && trickIndex < trickSeq.Count && !ColorSwitcherWater.isJumping)
         {

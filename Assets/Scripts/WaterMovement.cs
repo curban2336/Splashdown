@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -7,14 +9,22 @@ public class WaterMovement : MonoBehaviour
     [SerializeField] float bouyancy = 6f;
     [SerializeField] float downSpeed = -11f;
     [SerializeField] float currentMovement = 0f;
+    [SerializeField] float rotationDegree = 0f;
     private Rect cameraRect;
     public static bool isInWater = true;
+
+    public GameObject dolphoMove;
+    public GameObject dolphoTrick;
+    public GameObject dolphoFly;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         var bottomLeft = Camera.main.ScreenToWorldPoint(Vector3.zero);
         var topRight = Camera.main.ScreenToWorldPoint(new Vector3(Camera.main.pixelWidth, Camera.main.pixelHeight));
         cameraRect = new Rect(bottomLeft.x, bottomLeft.y, topRight.x - bottomLeft.x, topRight.y - bottomLeft.y);
+        dolphoFly.SetActive(false);
+        dolphoTrick.SetActive(false);
+        dolphoMove.SetActive(true);
     }
 
     // Update is called once per frame
@@ -24,10 +34,15 @@ public class WaterMovement : MonoBehaviour
         if (ColorSwitcherWater.isJumping)
         {
             isInWater = false;
+            dolphoMove.SetActive(false);
+            dolphoFly.SetActive(true);
         }
         else
         {
             isInWater = true;
+            dolphoMove.SetActive(true);
+            dolphoFly.SetActive(false);
+            dolphoTrick.SetActive(false);
         }
         if (isInWater)
         {
@@ -42,13 +57,25 @@ public class WaterMovement : MonoBehaviour
         cameraRect = new Rect(bottomLeft.x, bottomLeft.y, topRight.x - bottomLeft.x, topRight.y - bottomLeft.y);
     }
 
+    IEnumerator TrickCoroutine()
+    {
+        dolphoMove.SetActive(false);
+        dolphoFly.SetActive(false);
+        dolphoTrick.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        dolphoTrick.SetActive(false);
+        dolphoFly.SetActive(true);
+    }
+
     void WaterUpdate()
     {
         Vector2 desiredPosition = this.transform.position;
         if (Input.GetKey(KeyCode.Space))
         {
             currentMovement -= 60 * Time.deltaTime;
-            if(currentMovement < downSpeed)
+            rotationDegree = Mathf.Lerp(rotationDegree, -45f, Time.deltaTime * 2.5f);
+            this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
+            if (currentMovement < downSpeed)
             {
                 currentMovement = downSpeed;
             }
@@ -56,6 +83,8 @@ public class WaterMovement : MonoBehaviour
         else
         {
             currentMovement += 60 * Time.deltaTime;
+            rotationDegree = Mathf.Lerp(rotationDegree, 45f, Time.deltaTime * 2.5f);
+            this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
             if (currentMovement > bouyancy)
             {
                 currentMovement = bouyancy;
