@@ -93,6 +93,14 @@ public class MineTwoScript : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void RollHeightTwoMove(int RollHeightTwo)
+    {
+        if(RollHeightTwo == 1)
+        {
+            
+        }
+    }
+
     IEnumerator HandleDeath()
     {
         isDead = true;

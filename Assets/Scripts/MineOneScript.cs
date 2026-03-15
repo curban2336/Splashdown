@@ -42,7 +42,7 @@ public class MineOneScript : MonoBehaviour
         if (transform.position.x < startPos.x - 30)
         {
             transform.position = startPos;
-            //Send Message to roll range in Mine Manager
+            gameObject.SendMessage("MineReachEnd", 5.0);
         }
 
         if(!ColorSwitcherWater.isJumping && !jumpStart)
@@ -91,6 +91,14 @@ public class MineOneScript : MonoBehaviour
         jumpStart = false;
         ColorSwitcherWater.isJumping = false;
         Time.timeScale = 1f;
+    }
+
+    public void RollHeightOneMove(int RollHeightOne)
+    {
+        if(RollHeightOne == 1)
+        {
+            
+        }
     }
 
     IEnumerator HandleDeath()

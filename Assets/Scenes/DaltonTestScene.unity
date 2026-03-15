@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 567524531}
   - component: {fileID: 567524530}
   - component: {fileID: 567524533}
+  - component: {fileID: 567524534}
   m_Layer: 0
   m_Name: Mine1
   m_TagString: Slow
@@ -272,6 +273,20 @@ MonoBehaviour:
   speed: 10
   deathSpeedThreshold: 2
   deathUIPanel: {fileID: 0}
+--- !u!114 &567524534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567524529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e335c0cd1dd4cff4a8c0dc5d125e90c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MineSpawn
+  MineOne: {fileID: 567524529}
+  MineTwo: {fileID: 987970175}
 --- !u!1 &987970175
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,6 +299,7 @@ GameObject:
   - component: {fileID: 987970177}
   - component: {fileID: 987970176}
   - component: {fileID: 987970179}
+  - component: {fileID: 987970180}
   m_Layer: 0
   m_Name: Mine2
   m_TagString: Slow
@@ -425,6 +441,20 @@ MonoBehaviour:
   speed: 10
   deathSpeedThreshold: 2
   deathUIPanel: {fileID: 0}
+--- !u!114 &987970180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987970175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e335c0cd1dd4cff4a8c0dc5d125e90c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MineSpawn
+  MineOne: {fileID: 567524529}
+  MineTwo: {fileID: 987970175}
 --- !u!1 &1486046718
 GameObject:
   m_ObjectHideFlags: 0
