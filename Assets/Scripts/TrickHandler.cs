@@ -237,6 +237,7 @@ public class TrickHandler : MonoBehaviour
             }
             --trickCount;
             ++wrongCount;
+            pMovement.StopCoroutine("TrickCoroutine");
             setTrick = false;
             trickSeq.Clear();
         }

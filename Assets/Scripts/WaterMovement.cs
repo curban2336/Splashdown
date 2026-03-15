@@ -39,6 +39,11 @@ public class WaterMovement : MonoBehaviour
                 dolphoMove.SetActive(false);
                 dolphoFly.SetActive(true);
             }
+            if(GetComponent<Rigidbody2D>().linearVelocity.y < 0f)
+            {
+                rotationDegree = Mathf.Lerp(rotationDegree, -45f, Time.deltaTime * 2.5f);
+                this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
+            }
         }
         else
         {
