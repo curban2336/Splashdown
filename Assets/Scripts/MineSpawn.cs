@@ -21,12 +21,16 @@ public class MineSpawn : MonoBehaviour
     public void MineReachEnd()
     {
         Debug.Log("Reach End");
-        //int RollHeightOne = Random.Range(1, 4);
-        //int RollHeightTwo = Random.Range(1, 4);
-        //Debug.Log(RollHeightOne);
-        //Debug.Log(RollHeightTwo);
-        //gameObject.SendMessage("RollHeightOneMove", RollHeightOne);
-        //gameObject.SendMessage("RollHeightTwoMove", RollHeightTwo);
+        int RollHeightOne = Random.Range(1, 4);
+        int RollHeightTwo = Random.Range(1, 4);
+        if(RollHeightTwo == RollHeightOne)
+        {
+            RollHeightTwo = Random.Range(1, 4);
+        }
+        Debug.Log(RollHeightOne);
+        Debug.Log(RollHeightTwo);
+        MineOne.SendMessage("RollHeightOneMove", RollHeightOne);
+        MineTwo.SendMessage("RollHeightTwoMove", RollHeightTwo);
     }
 
     // Update is called once per frame

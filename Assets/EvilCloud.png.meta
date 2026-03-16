@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: b2c0d7f8a04d99e439f09efec5731ec3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1093794416707130873
+    second: EvilCloud_0
+  - first:
+      213: -2505901666755835382
+    second: EvilCloud_1
+  - first:
+      213: -786204279000290659
+    second: EvilCloud_2
+  - first:
+      213: 5780147118518726742
+    second: EvilCloud_3
+  - first:
+      213: 9130209677907401389
+    second: EvilCloud_4
+  - first:
+      213: -663870563373315778
+    second: EvilCloud_5
+  - first:
+      213: -4605898002744448972
+    second: EvilCloud_6
+  - first:
+      213: 7930306715192303184
+    second: EvilCloud_7
+  - first:
+      213: -6173560715665272629
+    second: EvilCloud_8
+  - first:
+      213: 7905189534164973861
+    second: EvilCloud_9
+  - first:
+      213: 2432764490365594031
+    second: EvilCloud_10
+  - first:
+      213: 2553993274277402054
+    second: EvilCloud_11
+  - first:
+      213: -7438384158795106848
+    second: EvilCloud_12
+  - first:
+      213: 4984791765425767022
+    second: EvilCloud_13
+  - first:
+      213: 154580427747455019
+    second: EvilCloud_14
+  - first:
+      213: 5632705951183282154
+    second: EvilCloud_15
+  - first:
+      213: -2894860011231976633
+    second: EvilCloud_16
+  - first:
+      213: 6473735198089551470
+    second: EvilCloud_17
+  - first:
+      213: -3322777778242201126
+    second: EvilCloud_18
+  - first:
+      213: 2401069135998371387
+    second: EvilCloud_19
+  - first:
+      213: 3838594837030888516
+    second: EvilCloud_20
+  - first:
+      213: 7021976416425740412
+    second: EvilCloud_21
+  - first:
+      213: 3405748543090827704
+    second: EvilCloud_22
+  - first:
+      213: -5860733677521931760
+    second: EvilCloud_23
+  - first:
+      213: -6857234383421313204
+    second: EvilCloud_24
+  - first:
+      213: 4155948291522849401
+    second: EvilCloud_25
+  - first:
+      213: -5856826290384703465
+    second: EvilCloud_26
+  - first:
+      213: 2942130699407904719
+    second: EvilCloud_27
+  - first:
+      213: -3847357240355437703
+    second: EvilCloud_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EvilCloud_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f552211a30fd2f00800000000000000
+      internalID: 1093794416707130873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilCloud_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a85fef5bf393dd0800000000000000
+      internalID: -2505901666755835382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilCloud_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9aab4daf57d615f0800000000000000
+      internalID: -786204279000290659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilCloud_3
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 1280
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6507ec40e25373050800000000000000
+      internalID: 5780147118518726742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 453d85ca06125d245b2e2fa75c54f97a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":1280.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      EvilCloud_0: 1093794416707130873
+      EvilCloud_1: -2505901666755835382
+      EvilCloud_2: -786204279000290659
+      EvilCloud_3: 5780147118518726742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

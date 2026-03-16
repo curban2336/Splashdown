@@ -5,7 +5,8 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] List<GameObject> creditsUI;
-    [SerializeField] List<GameObject> intructionsUI;
+    [SerializeField] List<GameObject> instructionsUI;
+    [SerializeField] List<GameObject> mainMenuUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +14,7 @@ public class UIManager : MonoBehaviour
         {
             credit.SetActive(false);
         }
-        foreach (GameObject instruction in intructionsUI)
+        foreach (GameObject instruction in instructionsUI)
         {
             instruction.SetActive(false);
         }
@@ -25,13 +26,21 @@ public class UIManager : MonoBehaviour
         {
             credit.SetActive(true);
         }
+        foreach(GameObject main in mainMenuUI)
+        {
+            main.SetActive(false);
+        }
     }
 
     public void ActivateInstruct()
     {
-        foreach (GameObject credit in creditsUI)
+        foreach (GameObject instruction in instructionsUI)
         {
-            credit.SetActive(true);
+            instruction.SetActive(true);
+        }
+        foreach (GameObject main in mainMenuUI)
+        {
+            main.SetActive(false);
         }
     }
 
@@ -41,9 +50,13 @@ public class UIManager : MonoBehaviour
         {
             credit.SetActive(false);
         }
-        foreach (GameObject instruction in intructionsUI)
+        foreach (GameObject instruction in instructionsUI)
         {
             instruction.SetActive(false);
+        }
+        foreach (GameObject main in mainMenuUI)
+        {
+            main.SetActive(true);
         }
     }
 }

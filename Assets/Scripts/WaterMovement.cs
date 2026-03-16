@@ -82,7 +82,7 @@ public class WaterMovement : MonoBehaviour
 
     void WaterUpdate()
     {
-        Vector2 desiredPosition = this.transform.position;
+        Vector3 desiredPosition = this.transform.position;
         if (Input.GetKey(KeyCode.Space))
         {
             currentMovement -= 60 * Time.deltaTime;
@@ -103,9 +103,9 @@ public class WaterMovement : MonoBehaviour
                 currentMovement = bouyancy;
             }
         }
-        desiredPosition += new Vector2(0f, currentMovement * Time.deltaTime);
+        desiredPosition += new Vector3(0f, currentMovement * Time.deltaTime, -0.1f);
         //desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, currentMovement), Time.deltaTime);
-        Vector2 allowedPosition = new Vector2(Mathf.Clamp(desiredPosition.x, cameraRect.xMin, cameraRect.xMax), Mathf.Clamp(desiredPosition.y, cameraRect.yMin, cameraRect.yMax));
+        Vector3 allowedPosition = new Vector3(Mathf.Clamp(desiredPosition.x, cameraRect.xMin, cameraRect.xMax), Mathf.Clamp(desiredPosition.y, cameraRect.yMin, cameraRect.yMax), -0.1f);
 
         this.transform.position = allowedPosition;
         //currentMovement = 0f;

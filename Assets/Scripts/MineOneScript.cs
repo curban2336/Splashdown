@@ -47,17 +47,17 @@ public class MineOneScript : MonoBehaviour
             int RollHeightOne = Random.Range(1, 4);
             if(RollHeightOne == 1)
             {
-                transform.position = new Vector3(20, -1, 0);
+                transform.position = new Vector3(20, -1, -0.1f);
             }
 
             if(RollHeightOne == 2)
             {
-                transform.position = new Vector3(20, -3, 0);
+                transform.position = new Vector3(20, -3, -0.1f);
             }
 
             if(RollHeightOne == 3)
             {
-                transform.position = new Vector3(20, -5, 0);
+                transform.position = new Vector3(20, -5, -0.1f);
             }
         }
 
@@ -85,12 +85,12 @@ public class MineOneScript : MonoBehaviour
     
     public void SpeedUp()
     {
-        speed += 1;
+        speed += 4;
     }
 
     public void SpeedDown()
     {
-        speed -= 1;
+        speed -= 2;
     }
 
     public void Restart()

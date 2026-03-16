@@ -28,7 +28,7 @@ public class TrickHandler : MonoBehaviour
     public float trickTimeLimitStart;
 
     [SerializeField] public static int wrongCount = 0;
-    [SerializeField] BG_MoveLeft background;
+    [SerializeField] public BG_MoveLeft background;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -79,11 +79,6 @@ public class TrickHandler : MonoBehaviour
         if (background.speed <= 10)
         {
             trickNum = 3;
-        }
-        water.jumpForce = 20f + (10 * Mathf.FloorToInt((trickNum - 3) / 4));
-        if (background.speed <= 10)
-        {
-            water.jumpForce = 20f;
         }
         trickCount = trickNum;
         ScoreReporting.totalTricks = trickNum;

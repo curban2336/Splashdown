@@ -25,7 +25,7 @@ public class BG_MoveLeft : MonoBehaviour
 
     void Start()
     {
-        startPos = new Vector2(21.68f, transform.position.y);
+        startPos = new Vector2(21.75f, transform.position.y);
         repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
 
         // Ensure the death UI is disabled at start (safe-guard)
@@ -69,12 +69,12 @@ public class BG_MoveLeft : MonoBehaviour
     
     public void SpeedUp()
     {
-        speed += 1;
+        speed += 4;
     }
 
     public void SpeedDown()
     {
-        speed -= 1;
+        speed -= 2;
     }
 
     public void Restart()

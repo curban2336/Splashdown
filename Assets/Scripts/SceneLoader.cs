@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +12,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadPlay()
     {
-        SceneManager.LoadScene("LevelTest Scene");
+        SceneManager.LoadScene("ChosScene");
     }
 
     // Update is called once per frame

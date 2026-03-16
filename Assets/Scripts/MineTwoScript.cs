@@ -47,17 +47,17 @@ public class MineTwoScript : MonoBehaviour
             int RollHeightTwo = Random.Range(1, 4);
             if(RollHeightTwo == 1)
             {
-                transform.position = new Vector3(20, -1, 0);
+                transform.position = new Vector3(20, -1, -0.1f);
             }
 
             if(RollHeightTwo == 2)
             {
-                transform.position = new Vector3(20, -3, 0);
+                transform.position = new Vector3(20, -3, -0.1f);
             }
 
             if(RollHeightTwo == 3)
             {
-                transform.position = new Vector3(20, -5, 0);
+                transform.position = new Vector3(20, -5, -0.1f);
             }
         }
 
@@ -85,12 +85,12 @@ public class MineTwoScript : MonoBehaviour
     
     public void SpeedUp()
     {
-        speed += 1;
+        speed += 4;
     }
 
     public void SpeedDown()
     {
-        speed -= 1;
+        speed -= 2;
     }
 
     public void Restart()

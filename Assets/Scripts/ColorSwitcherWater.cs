@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ColorSwitcherWater : MonoBehaviour
 {
@@ -23,6 +24,18 @@ public class ColorSwitcherWater : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public void BoostJump()
+    {
+        if (trickHandler.background.speed <= 10)
+        {
+            jumpForce = 20f;
+        }
+        else
+        {
+            jumpForce = 20f + (10 * Mathf.FloorToInt((trickHandler.background.speed-10) / 4));
+        }
+    }
+
     void Update()
     {
         if (transform.position.y < thresholdY)
@@ -39,13 +52,14 @@ public class ColorSwitcherWater : MonoBehaviour
         if (transform.position.y <= -4)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-            rb.simulated = false;
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
             isJumping = false;
         }
 
         if (canJumpTrigger && Input.GetKeyDown(KeyCode.Space))
         {
             BG_MoveLeft.jumpStart = false;
+            BoostJump();
             Jump();
         }
         
@@ -59,7 +73,7 @@ public class ColorSwitcherWater : MonoBehaviour
 
     void Jump()
     {
-        rb.simulated = true;
+        rb.constraints = RigidbodyConstraints2D.None;
         trickHandler.ActivateTrickTime();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         canJumpTrigger = false;

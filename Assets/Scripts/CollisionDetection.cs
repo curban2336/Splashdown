@@ -1,7 +1,13 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
 {
+    public List<BG_MoveLeft> parallax;
+    public MineTwoScript mineTwoScript;
+    public MineOneScript mineOneScript;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,17 +20,27 @@ public class CollisionDetection : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Fast"))
         {
-            gameObject.SendMessage("SpeedUp", 5.0);
+            foreach (BG_MoveLeft bg in parallax)
+            {
+                bg.SpeedUp();
+            }
+            mineOneScript.SendMessage("SpeedUp", 5.0);
+            mineTwoScript.SendMessage("SpeedUp", 5.0);
             Debug.Log("Speed Up!");
         }
         
         if (collision.gameObject.CompareTag("Slow"))
         {
-            gameObject.SendMessage("SpeedDown", 5.0);
+            foreach (BG_MoveLeft bg in parallax)
+            {
+                bg.SpeedDown();
+            }
+            mineOneScript.SendMessage("SpeedDown", 5.0);
+            mineTwoScript.SendMessage("SpeedDown", 5.0);
             Debug.Log("Ouch!");
         }
     }
