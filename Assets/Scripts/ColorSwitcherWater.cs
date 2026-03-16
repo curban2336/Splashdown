@@ -73,7 +73,7 @@ public class ColorSwitcherWater : MonoBehaviour
 
     void Jump()
     {
-        rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
         trickHandler.ActivateTrickTime();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         canJumpTrigger = false;

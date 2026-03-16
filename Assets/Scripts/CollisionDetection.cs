@@ -22,6 +22,7 @@ public class CollisionDetection : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Fast"))
         {
             foreach (BG_MoveLeft bg in parallax)
