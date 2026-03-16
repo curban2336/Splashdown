@@ -9,7 +9,7 @@ public class EnvironmentControl : MonoBehaviour
 
     public float minSpawnInterval = 0.5f;
     public float maxSpawnInterval = 1.75f;
-    public float[] spawnHeights = new float[] { 20f, 25f, 30f };
+    public float[] spawnHeights = new float[] { 20f, 22f, 40f, 60f };
     public float spawnXOffset = 18f;
     public float cloudScale = 0.3f;
     public float depthDeviation = 0.02f;
@@ -28,7 +28,7 @@ public class EnvironmentControl : MonoBehaviour
             Debug.LogWarning("EnvironmentControl: no cloud sprites or prefabs or template tag assigned.");
 
         if (spawnHeights == null || spawnHeights.Length == 0)
-            spawnHeights = new float[] { 20f, 25f, 30f };
+            spawnHeights = new float[] { 20f, 22f, 40f, 60f };
 
         if (!string.IsNullOrEmpty(cloudTemplateTag) && (cloudPrefabs == null || cloudPrefabs.Length == 0))
         {
