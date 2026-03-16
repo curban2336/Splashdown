@@ -44,6 +44,11 @@ public class WaterMovement : MonoBehaviour
                 rotationDegree = Mathf.Lerp(rotationDegree, -45f, Time.deltaTime * 2.5f);
                 this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
             }
+            else
+            {
+                rotationDegree = Mathf.Lerp(rotationDegree, 45f, Time.deltaTime * 2.5f);
+                this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
+            }
         }
         else
         {

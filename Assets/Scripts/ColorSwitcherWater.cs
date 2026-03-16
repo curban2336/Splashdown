@@ -38,6 +38,7 @@ public class ColorSwitcherWater : MonoBehaviour
 
         if (transform.position.y <= -4)
         {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.simulated = false;
             isJumping = false;
         }
