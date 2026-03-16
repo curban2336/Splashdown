@@ -34,7 +34,7 @@ public class EvilCloud : MonoBehaviour
 
         if (WavesVer3_0.speed < 5)
         {
-            transform.position = new Vector3(-2, camera.transform.position.y, -1);
+            transform.position = new Vector3(-4, camera.transform.position.y, -1);
         }
     }
 }

@@ -25,7 +25,7 @@ public class BG_MoveLeft : MonoBehaviour
 
     void Start()
     {
-        startPos = new Vector2(21.75f, transform.position.y);
+        startPos = new Vector2(56.75f, transform.position.y);
         repeatWidth = GetComponent<BoxCollider2D>().size.x / 2;
 
         // Ensure the death UI is disabled at start (safe-guard)
@@ -83,7 +83,7 @@ public class BG_MoveLeft : MonoBehaviour
         jumpStart = false;
         ColorSwitcherWater.isJumping = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene("LevelTest Scene");
+        SceneManager.LoadScene("ChosScene");
     }
 
     public void QuitMenu()

@@ -10,6 +10,8 @@ public class Island : MonoBehaviour
     void Start()
     {
         echoLocation.SetActive(false);
+        transform.position = startPos;
+        Undertow.sendIsland = false;
     }
 
     // Update is called once per frame

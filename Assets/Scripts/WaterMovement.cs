@@ -57,7 +57,7 @@ public class WaterMovement : MonoBehaviour
             dolphoFly.SetActive(false);
             dolphoTrick.SetActive(false);
         }
-        if (isInWater)
+        if (isInWater && trickHandler.background.speed > 1)
         {
             WaterUpdate();
         }
@@ -83,32 +83,33 @@ public class WaterMovement : MonoBehaviour
     void WaterUpdate()
     {
         Vector3 desiredPosition = this.transform.position;
-        if (Input.GetKey(KeyCode.Space))
-        {
-            currentMovement -= 60 * Time.deltaTime;
-            rotationDegree = Mathf.Lerp(rotationDegree, -45f, Time.deltaTime * 2.5f);
-            this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
-            if (currentMovement < downSpeed)
+        if (trickHandler.background.speed >= 2) {
+            if (Input.GetKey(KeyCode.Space))
             {
-                currentMovement = downSpeed;
+                currentMovement -= 60 * Time.deltaTime;
+                rotationDegree = Mathf.Lerp(rotationDegree, -45f, Time.deltaTime * 2.5f);
+                this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
+                if (currentMovement < downSpeed)
+                {
+                    currentMovement = downSpeed;
+                }
             }
-        }
-        else
-        {
-            currentMovement += 60 * Time.deltaTime;
-            rotationDegree = Mathf.Lerp(rotationDegree, 45f, Time.deltaTime * 2.5f);
-            this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
-            if (currentMovement > bouyancy)
+            else
             {
-                currentMovement = bouyancy;
+                currentMovement += 60 * Time.deltaTime;
+                rotationDegree = Mathf.Lerp(rotationDegree, 45f, Time.deltaTime * 2.5f);
+                this.transform.rotation = Quaternion.Euler(0f, 0f, rotationDegree);
+                if (currentMovement > bouyancy)
+                {
+                    currentMovement = bouyancy;
+                }
             }
-        }
-        desiredPosition += new Vector3(0f, currentMovement * Time.deltaTime, -0.1f);
-        //desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, currentMovement), Time.deltaTime);
-        Vector3 allowedPosition = new Vector3(Mathf.Clamp(desiredPosition.x, cameraRect.xMin, cameraRect.xMax), Mathf.Clamp(desiredPosition.y, cameraRect.yMin, cameraRect.yMax), -0.1f);
+            desiredPosition += new Vector3(0f, currentMovement * Time.deltaTime, -0.1f);
+            //desiredPosition = Vector2.Lerp(desiredPosition, new Vector2(desiredPosition.x, currentMovement), Time.deltaTime);
+            Vector3 allowedPosition = new Vector3(Mathf.Clamp(desiredPosition.x, cameraRect.xMin, cameraRect.xMax), Mathf.Clamp(desiredPosition.y, cameraRect.yMin, cameraRect.yMax), -0.1f);
 
-        this.transform.position = allowedPosition;
-        //currentMovement = 0f;
+            this.transform.position = allowedPosition;
+        }
     }
 
     public void RaiseBouyancy()
