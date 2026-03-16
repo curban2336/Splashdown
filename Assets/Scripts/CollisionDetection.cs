@@ -31,7 +31,6 @@ public class CollisionDetection : MonoBehaviour
             }
             mineOneScript.SendMessage("SpeedUp", 5.0);
             mineTwoScript.SendMessage("SpeedUp", 5.0);
-            Debug.Log("Speed Up!");
         }
         
         if (collision.gameObject.CompareTag("Slow"))
@@ -42,7 +41,16 @@ public class CollisionDetection : MonoBehaviour
             }
             mineOneScript.SendMessage("SpeedDown", 5.0);
             mineTwoScript.SendMessage("SpeedDown", 5.0);
-            Debug.Log("Ouch!");
+        }
+
+        if (collision.gameObject.CompareTag("Island"))
+        {
+            foreach (BG_MoveLeft bg in parallax)
+            {
+                bg.speed = 1;
+            }
+            mineOneScript.SendMessage("SpeedDown", 5.0);
+            mineTwoScript.SendMessage("SpeedDown", 5.0);
         }
     }
 }

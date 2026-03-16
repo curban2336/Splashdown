@@ -11,6 +11,7 @@ TagManager:
   - Fast
   - Slow
   - CloudTemplate
+  - Island
   layers:
   - Default
   - TransparentFX

@@ -8,6 +8,9 @@ public class Undertow : MonoBehaviour
     public float deathSpeedThreshold = 2f; 
     public static bool jumpStart = false;
     private int RollHeightOne;
+    public int islandCounter = 0;
+    public int underTowThreshold = 5;
+    public static bool sendIsland = false;
 
     [SerializeField] private GameObject deathUIPanel; // assign the Canvas object (panel/text) in Inspector
 
@@ -42,6 +45,13 @@ public class Undertow : MonoBehaviour
 
         if (transform.position.x < startPos.x - 50)
         {
+            ++islandCounter;
+            if (islandCounter == underTowThreshold)
+            {
+                sendIsland = true;
+                islandCounter = 0;
+                underTowThreshold++;
+            }
             transform.position = startPos;
             //gameObject.SendMessage("MineReachEnd", 5.0);
             int RollHeightOne = Random.Range(1, 4);
